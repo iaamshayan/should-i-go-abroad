@@ -1,0 +1,1963 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A free readiness check for Pakistani workers considering Saudi Arabia, the UAE or Qatar: a score out of 100, the traps that sink people, and what to do before you go and after you land.">
+<meta property="og:title" content="Should I Go Abroad?">
+<meta property="og:description" content="A free readiness check for Pakistani workers considering Saudi Arabia, the UAE or Qatar: a score out of 100, the traps that sink people, and what to do before you go and after you land.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+<title>Should I Go Abroad?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* ============ tokens: light is the base, both themes redefined below ============ */
+:root{
+  --ground:#F5F4EF; --surface:#FFFFFF; --surface-2:#FAF9F5;
+  --ink:#141F1D; --ink-2:#4B5755; --ink-3:#7C8785;
+  --rule:#DEDCD3; --rule-2:#EAE8E0;
+  --accent:#0F6F62; --accent-ink:#0B5349; --accent-soft:#E2EFEC;
+  --go:#1E6B42; --close:#6F5A0E; --wait:#9A530E; --stop:#98281F;
+  --go-soft:#E4EFE7; --close-soft:#F3EEDB; --wait-soft:#F6EADC; --stop-soft:#F6E4E1;
+  --bar:#2E8578; --bar-track:#E9E7DE;
+  --on-accent:#FFFFFF;
+  --shadow:0 1px 2px rgba(20,31,29,.06),0 8px 24px -12px rgba(20,31,29,.18);
+  --focus:#0F6F62;
+  --maxw:41rem;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#101614; --surface:#18201E; --surface-2:#1D2624;
+    --ink:#ECEDE7; --ink-2:#AAB4B1; --ink-3:#818B89;
+    --rule:#2C3735; --rule-2:#242E2C;
+    --accent:#54BFAC; --accent-ink:#7FD4C4; --accent-soft:#17302C;
+    --go:#66C48D; --close:#CBB25A; --wait:#DE9A55; --stop:#E5837A;
+    --go-soft:#16281E; --close-soft:#2A2617; --wait-soft:#2C2318; --stop-soft:#2E1C1A;
+    --bar:#3E9C8C; --bar-track:#242E2C;
+    --on-accent:#08211D;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+    --focus:#7FD4C4;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101614; --surface:#18201E; --surface-2:#1D2624;
+  --ink:#ECEDE7; --ink-2:#AAB4B1; --ink-3:#818B89;
+  --rule:#2C3735; --rule-2:#242E2C;
+  --accent:#54BFAC; --accent-ink:#7FD4C4; --accent-soft:#17302C;
+  --go:#66C48D; --close:#CBB25A; --wait:#DE9A55; --stop:#E5837A;
+  --go-soft:#16281E; --close-soft:#2A2617; --wait-soft:#2C2318; --stop-soft:#2E1C1A;
+  --bar:#3E9C8C; --bar-track:#242E2C;
+  --on-accent:#08211D;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+  --focus:#7FD4C4;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--ink);
+  font:400 16px/1.6 "Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  margin:0; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(1.7rem,5vw,2.3rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.35rem;font-weight:600}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0}
+a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;font-weight:500;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ============ shell ============ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 1.15rem}
+.wrap.wide{max-width:54rem}
+
+header.top{
+  position:sticky;top:0;z-index:20;background:var(--ground);
+  border-bottom:1px solid var(--rule);
+}
+.topbar{max-width:54rem;margin:0 auto;padding:.7rem 1.15rem;display:flex;align-items:center;gap:.75rem}
+.brand{font-family:"Zilla Slab",Georgia,serif;font-weight:600;font-size:1rem;letter-spacing:-.01em}
+.brand em{font-style:normal;color:var(--accent-ink)}
+.topbar .spacer{flex:1}
+.chip{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.06em;
+  text-transform:uppercase;padding:.22rem .5rem;border:1px solid var(--rule);
+  border-radius:999px;color:var(--ink-3);background:var(--surface);white-space:nowrap;
+}
+.progress{height:3px;background:var(--rule-2)}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s ease}
+
+main{padding:1.75rem 0 5rem}
+.stack{display:flex;flex-direction:column;gap:1.15rem}
+.stack.tight{gap:.7rem}
+.stack.loose{gap:2rem}
+
+/* ============ buttons ============ */
+button{font:inherit;cursor:pointer}
+.btn{
+  font-family:"Libre Franklin",sans-serif;font-weight:600;font-size:.95rem;
+  padding:.72rem 1.3rem;border-radius:6px;border:1px solid transparent;
+  background:var(--accent);color:var(--on-accent);transition:filter .15s;
+}
+.btn:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.4;cursor:not-allowed;filter:none}
+.btn.ghost{background:transparent;color:var(--ink-2);border-color:var(--rule)}
+.btn.ghost:hover{background:var(--surface);filter:none}
+.btn.small{padding:.45rem .8rem;font-size:.85rem}
+.nav{display:flex;gap:.6rem;align-items:center;padding-top:.4rem}
+.nav .spacer{flex:1}
+
+/* ============ question cards ============ */
+.qgroup{
+  background:var(--surface);border:1px solid var(--rule);border-radius:9px;
+  padding:1.15rem;box-shadow:var(--shadow);
+}
+.qgroup + .qgroup{margin-top:.85rem}
+.qhead{display:flex;gap:.6rem;align-items:baseline;margin-bottom:.15rem}
+.qnum{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.78rem;font-weight:500;
+  color:var(--ink-3);flex:none;padding-top:.1rem;
+}
+.qtext{font-weight:600;font-size:1rem;line-height:1.45}
+.qhelp{font-size:.86rem;color:var(--ink-2);margin:.35rem 0 0;padding-left:1.9rem}
+.opts{display:flex;flex-direction:column;gap:.3rem;margin-top:.75rem;padding-left:1.9rem}
+.opt{
+  display:flex;gap:.6rem;align-items:flex-start;padding:.55rem .7rem;
+  border:1px solid var(--rule-2);border-radius:6px;background:var(--surface-2);
+  cursor:pointer;transition:border-color .12s,background .12s;
+}
+.opt:hover{border-color:var(--accent);background:var(--accent-soft)}
+.opt input{
+  appearance:none;width:1.05rem;height:1.05rem;flex:none;margin:.22rem 0 0;
+  border:1.5px solid var(--ink-3);border-radius:50%;background:var(--surface);
+}
+.opt input:checked{border:5px solid var(--accent);background:var(--surface)}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.opt span{font-size:.93rem;line-height:1.45}
+.opt .pts{
+  margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:.75rem;
+  color:var(--ink-3);flex:none;padding-top:.12rem;
+}
+@media (max-width:420px){
+  .qhelp,.opts{padding-left:0}
+}
+
+/* ============ section intro ============ */
+.sechead{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap}
+.sechead .max{margin-left:auto}
+
+/* ============ callouts ============ */
+.note{
+  border-left:3px solid var(--accent);background:var(--accent-soft);
+  padding:.85rem 1rem;border-radius:0 6px 6px 0;font-size:.9rem;color:var(--ink-2);
+}
+.alarm{
+  border:1px solid var(--stop);background:var(--stop-soft);border-radius:8px;padding:1.1rem 1.15rem;
+}
+.alarm h3{color:var(--stop);display:flex;gap:.5rem;align-items:baseline}
+.alarm p{margin-top:.45rem;font-size:.93rem;color:var(--ink-2)}
+.caution{
+  border:1px solid var(--rule);border-left:3px solid var(--wait);background:var(--wait-soft);
+  border-radius:0 8px 8px 0;padding:.95rem 1.1rem;
+}
+.caution h3{color:var(--wait);font-size:.98rem}
+.caution p{margin-top:.35rem;font-size:.9rem;color:var(--ink-2)}
+
+/* ============ verdict ============ */
+.verdict{border-radius:10px;padding:1.5rem 1.35rem;border:1px solid var(--rule);background:var(--surface)}
+.verdict[data-tone="go"]{border-color:var(--go);background:var(--go-soft)}
+.verdict[data-tone="close"]{border-color:var(--close);background:var(--close-soft)}
+.verdict[data-tone="wait"]{border-color:var(--wait);background:var(--wait-soft)}
+.verdict[data-tone="stop"]{border-color:var(--stop);background:var(--stop-soft)}
+.verdict h2{font-size:clamp(1.35rem,4.2vw,1.8rem);margin-top:.3rem}
+.verdict[data-tone="go"] h2{color:var(--go)}
+.verdict[data-tone="close"] h2{color:var(--close)}
+.verdict[data-tone="wait"] h2{color:var(--wait)}
+.verdict[data-tone="stop"] h2{color:var(--stop)}
+.verdict p{margin-top:.6rem;color:var(--ink-2);font-size:.95rem}
+
+.scoreline{display:flex;align-items:flex-end;gap:.9rem;margin-top:1rem;flex-wrap:wrap}
+.bignum{
+  font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:3.1rem;line-height:.95;
+  letter-spacing:-.03em;color:var(--ink);
+}
+.bignum small{font-size:1.1rem;font-weight:400;color:var(--ink-3);letter-spacing:0}
+.scoreline .cap{font-size:.85rem;color:var(--ink-2);padding-bottom:.25rem;max-width:22rem}
+
+/* ============ breakdown chart ============ */
+.chart{display:flex;flex-direction:column;gap:.55rem}
+.row{display:grid;grid-template-columns:1fr auto;gap:.15rem .6rem;align-items:baseline}
+.row .name{font-size:.9rem;font-weight:500}
+.row .val{
+  font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:var(--ink-2);
+  font-variant-numeric:tabular-nums;
+}
+.row .track{
+  grid-column:1/-1;height:9px;background:var(--bar-track);border-radius:4px;overflow:hidden;
+}
+.row .fill{display:block;height:100%;background:var(--bar);border-radius:0 4px 4px 0}
+.row[data-focus="1"] .fill{background:var(--wait)}
+.row .flag{
+  font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--wait);border:1px solid var(--wait);border-radius:3px;padding:.02rem .28rem;margin-left:.4rem;
+}
+
+/* ============ advice lists ============ */
+.items{display:flex;flex-direction:column;gap:.1rem}
+.item{padding:.9rem 0;border-top:1px solid var(--rule)}
+.item:first-child{border-top:none;padding-top:.2rem}
+.item h3{margin-bottom:.3rem}
+.item p{font-size:.92rem;color:var(--ink-2)}
+.item .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--accent-ink);display:block;margin-bottom:.3rem;
+}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:9px;padding:1.2rem 1.25rem}
+
+/* ============ country picker ============ */
+.countries{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+.country{
+  display:flex;gap:.75rem;align-items:center;text-align:left;width:100%;
+  background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:.9rem 1rem;
+  transition:border-color .12s,transform .12s;
+}
+.country:hover{border-color:var(--accent);transform:translateY(-1px)}
+.country .fl{font-size:1.6rem;line-height:1;flex:none}
+.country b{display:block;font-family:"Zilla Slab",serif;font-size:1.05rem;font-weight:600}
+.country small{color:var(--ink-3);font-size:.76rem}
+
+/* ============ admin ============ */
+.admin-bar{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.tabs{display:flex;gap:.3rem;border-bottom:1px solid var(--rule);margin-bottom:1rem;flex-wrap:wrap}
+.tab{
+  background:none;border:none;border-bottom:2px solid transparent;padding:.5rem .75rem;
+  font-size:.9rem;font-weight:500;color:var(--ink-3);margin-bottom:-1px;
+}
+.tab[aria-selected="true"]{color:var(--accent-ink);border-bottom-color:var(--accent)}
+.ed{display:flex;flex-direction:column;gap:.5rem}
+.ed label{font-size:.78rem;color:var(--ink-3);font-weight:500}
+.ed input,.ed textarea{
+  font:inherit;font-size:.9rem;width:100%;padding:.45rem .6rem;background:var(--surface-2);
+  color:var(--ink);border:1px solid var(--rule);border-radius:5px;
+}
+.ed textarea{min-height:4.5rem;resize:vertical;line-height:1.5}
+.ed .num{width:4.5rem;font-family:"IBM Plex Mono",monospace}
+.edrow{display:flex;gap:.5rem;align-items:center}
+.edrow input[type=text]{flex:1}
+.edq{border:1px solid var(--rule-2);border-radius:7px;padding:.8rem;background:var(--surface-2)}
+.edq + .edq{margin-top:.55rem}
+.tally{font-family:"IBM Plex Mono",monospace;font-size:.8rem}
+.tally.bad{color:var(--stop);font-weight:600}
+.tally.good{color:var(--go)}
+table.subs{width:100%;border-collapse:collapse;font-size:.85rem}
+table.subs th,table.subs td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--rule-2);white-space:nowrap}
+table.subs th{font-family:"IBM Plex Mono",monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3)}
+table.subs td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.hidden{display:none!important}
+.saveline{font-size:.8rem;color:var(--ink-3);display:flex;align-items:center;gap:.4rem}
+
+@media print{
+  header.top,.nav,.noprint{display:none!important}
+  body{background:#fff}
+  .panel,.qgroup,.verdict{box-shadow:none;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="top noprint">
+  <div class="topbar">
+    <span class="brand">Should I Go <em>Abroad?</em></span>
+    <span class="spacer"></span>
+    <span class="chip" id="ctxChip" hidden></span>
+    <button class="btn ghost small hidden" id="adminBtn" type="button">Admin</button>
+    <button class="btn ghost small hidden" id="restartBtn" type="button">Start over</button>
+  </div>
+  <div class="progress"><i id="progressBar" style="width:0%"></i></div>
+</header>
+
+<main>
+  <div class="wrap" id="view"></div>
+</main>
+
+<script>
+/* ================= country packs (injected at build) ================= */
+var PACKS = {};
+/* Country pack: Saudi Arabia
+ * Scored sections adapted from the owner's own scorecard (Ksa Score table.xlsx).
+ * Knockouts and Section H added from research — see AUTHORING.md.
+ */
+PACKS["saudi-arabia"] = {
+  id: "saudi-arabia",
+  name: "Saudi Arabia",
+  flag: "\u{1F1F8}\u{1F1E6}",
+  origin: "Pakistan",
+  authored: "owner",
+  updated: "2026-09-08",
+
+  intro: "For a Pakistan-based worker weighing a move to the Kingdom. Answer honestly — a flattering score helps nobody.",
+
+  /* ---- Stage 0: unscored knockouts. A "stop" answer overrides the band. ---- */
+  knockouts: [
+    {
+      id: "k-visa",
+      text: "What visa will you actually travel on?",
+      help: "This is the single most common way Pakistani workers lose everything.",
+      options: [
+        { label: "A work visa (block/employment visa) naming me and my employer", severity: "ok" },
+        { label: "A visit or Umrah visa — I've been told it converts to work there", severity: "stop" },
+        { label: "A visit visa, and I'll job-hunt after I arrive", severity: "stop" },
+        { label: "I don't know yet — the agent hasn't told me", severity: "stop" }
+      ],
+      stopTitle: "You are being set up to become undocumented",
+      stopBody: "A visit or Umrah visa does not convert into a work visa. Workers sent this way become illegal the day the visa expires — unable to work legally, unable to leave without penalty, and at risk of detention and deportation. Pakistani missions have repeatedly warned about agents selling visit visas as jobs. Do not travel until you hold a work visa with your name and your employer on it."
+    },
+    {
+      id: "k-contract",
+      text: "Do you have a written employment contract that you have read, before departure?",
+      options: [
+        { label: "Yes — signed, with salary, hours, benefits and end-of-service in writing", severity: "ok" },
+        { label: "An offer letter, but not a full contract", severity: "warn" },
+        { label: "Only a verbal or WhatsApp promise", severity: "stop" },
+        { label: "No", severity: "stop" }
+      ],
+      stopTitle: "You have nothing to enforce",
+      stopBody: "A promise you cannot show a court, a ministry or an embassy is not a job. Salary, hours, benefits, end-of-service and who pays for the ticket must be written down and signed before you get on a plane. Ask for the contract, take it away, and read it without the agent in the room.",
+      warnTitle: "An offer letter is not a contract",
+      warnBody: "Offer letters routinely differ from the contract handed over on arrival. Get the full contract in writing and compare it line by line before you travel."
+    },
+    {
+      id: "k-beoe",
+      text: "Is your recruiter a BEOE-licensed Overseas Employment Promoter, and will your contract be stamped by the Protectorate of Emigrants?",
+      help: "Protection is legally required under the Emigration Ordinance 1979.",
+      options: [
+        { label: "Yes — I verified the licence myself and protection is arranged", severity: "ok" },
+        { label: "The agent says yes, but I haven't verified it", severity: "warn" },
+        { label: "No — going through a personal contact, without protection", severity: "stop" },
+        { label: "I don't know what this is", severity: "stop" }
+      ],
+      stopTitle: "You would be travelling outside Pakistan's legal protection",
+      stopBody: "Every Pakistani going abroad on a work visa is legally required to have their Foreign Service Agreement protected by the Protectorate of Emigrants. Protection is what entitles you to help from the Pakistani mission in Saudi Arabia if the employer breaks the contract. Without it you are on your own. Verify your agent's licence on beoe.gov.pk before paying anyone anything.",
+      warnTitle: "Verify the licence yourself",
+      warnBody: "An agent's word about their own licence is worth nothing. The BEOE publishes the list of active OEP licences — check it yourself on beoe.gov.pk, and confirm the specific office you are dealing with."
+    },
+    {
+      id: "k-money",
+      text: "Has anyone asked you for money beyond documented, receipted government fees?",
+      options: [
+        { label: "No — only official fees, with receipts", severity: "ok" },
+        { label: "A modest amount, and I got a receipt", severity: "warn" },
+        { label: "A large amount in cash, with no receipt", severity: "stop" }
+      ],
+      stopTitle: "This is the standard shape of a recruitment scam",
+      stopBody: "Large unreceipted cash demands are the defining feature of overseas job fraud in Pakistan — people lose their savings and their land to it every year. A legitimate employer does not charge you to be hired. Stop paying, keep every message and receipt you already have, and verify the employer independently using contact details you found yourself, not ones the agent gave you.",
+      warnTitle: "Keep every receipt",
+      warnBody: "Even documented fees are worth checking against the official schedule. Keep the paperwork — it is your evidence if the placement goes wrong."
+    },
+    {
+      id: "k-licence",
+      text: "Does your profession require Saudi licensing or credential verification — and have you started it?",
+      help: "Dataflow primary-source verification, Mumaris+/SCFHS for health workers, Saudi Council of Engineers for engineers.",
+      options: [
+        { label: "Not required for my profession — I checked", severity: "ok" },
+        { label: "Required, and my verification/licence is complete", severity: "ok" },
+        { label: "Required — started but not finished", severity: "warn" },
+        { label: "Required — I haven't started", severity: "stop" },
+        { label: "I don't know whether it's required", severity: "stop" }
+      ],
+      stopTitle: "You may not be allowed to practise your profession",
+      stopBody: "Regulated professions cannot legally work in the Kingdom without verification and a licence. Health workers need Dataflow primary-source verification, then eligibility and registration through Mumaris+/SCFHS; engineers need Saudi Council of Engineers registration. Dataflow contacts your universities and past employers directly, so it takes weeks to months — and any gap or exaggeration in your documents surfaces there. Find out what your profession requires and start before you commit to anything.",
+      warnTitle: "Finish the licensing before you travel",
+      warnBody: "An incomplete verification can leave you in the country unable to work legally while your savings drain. Get the positive Dataflow report and the eligibility decision in hand first."
+    },
+    {
+      id: "k-saudization",
+      text: "Is your target job in a category being localised under Saudization (Nitaqat)?",
+      help: "The 2026–2028 phase reserves a large and growing set of roles for Saudi nationals.",
+      options: [
+        { label: "No — I checked, my field still hires expatriates", severity: "ok" },
+        { label: "Partly — my field has quotas but still hires expats", severity: "warn" },
+        { label: "Yes — admin support, HR, accounting clerical, customer service or reception", severity: "stop" },
+        { label: "I don't know", severity: "warn" }
+      ],
+      stopTitle: "You are targeting roles that are closing to foreigners",
+      stopBody: "Saudi Arabia is running a three-year plan to localise hundreds of thousands of private-sector jobs. Sixty-nine administrative-support professions now require 100% Saudi staffing in any firm employing even one person in those roles, and sales and marketing roles carry a 60% localisation requirement. Chasing these jobs from Pakistan is chasing a shrinking door. Healthcare specialisms and technical/IT roles still carry lower localisation targets — aim there instead.",
+      warnTitle: "Check the localisation rules for your specific role",
+      warnBody: "Quotas differ sharply by sector and job title. Knowing exactly where your role sits changes which employers can realistically hire you."
+    }
+  ],
+
+  /* ---- Stage 1: scored sections, 100 points ---- */
+  sections: [
+    {
+      id: "A", name: "Education & qualification", max: 12,
+      questions: [
+        { text: "What is your highest level of education?", options: [
+          { label: "Master's or PhD", points: 4 },
+          { label: "Bachelor's", points: 3 },
+          { label: "Diploma", points: 2 },
+          { label: "High school", points: 1 },
+          { label: "Below high school", points: 0 } ] },
+        { text: "Is your education relevant to the work you want to do in Saudi Arabia?", options: [
+          { label: "Highly relevant", points: 4 },
+          { label: "Somewhat relevant", points: 2 },
+          { label: "Not relevant", points: 0 } ] },
+        { text: "Do you hold professional or technical certifications relevant to your target job?", options: [
+          { label: "Multiple relevant certifications", points: 2 },
+          { label: "One relevant certification", points: 1 },
+          { label: "Only unrelated certifications, or none", points: 0 } ] },
+        { text: "Are your degree and documents attested (HEC, MOFA, Saudi embassy)?", options: [
+          { label: "All attested and in hand", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started, or I don't know what's needed", points: 0 } ] }
+      ],
+      gap: "Your paperwork will be tested harder than you expect. Saudi employers and Dataflow verify degrees at source, and unattested documents stall visas for months. Complete HEC, MOFA and Saudi embassy attestation before you apply, and add one recognised certification in your actual target field — it moves you out of the undifferentiated pile."
+    },
+    {
+      id: "B", name: "Work experience & employability", max: 20,
+      questions: [
+        { text: "How many years of relevant work experience do you have?", options: [
+          { label: "5 or more", points: 6 },
+          { label: "3–4", points: 5 },
+          { label: "1–2", points: 3 },
+          { label: "Less than 1", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Is that experience directly related to the job you want in Saudi Arabia?", options: [
+          { label: "Directly related", points: 4 },
+          { label: "Partially related", points: 2 },
+          { label: "Weakly related", points: 1 },
+          { label: "Not related", points: 0 } ] },
+        { text: "Have you worked in a formal, registered organisation rather than only informal work?", options: [
+          { label: "3+ years in registered companies", points: 3 },
+          { label: "1–2 years", points: 2 },
+          { label: "Some informal-sector work only", points: 1 },
+          { label: "No formal employment", points: 0 } ] },
+        { text: "Can you produce verifiable evidence of your experience — letters, payslips and contracts an outside verifier could confirm?", options: [
+          { label: "Strong documentation for every role", points: 3 },
+          { label: "Some documentation", points: 2 },
+          { label: "Limited documentation", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Have you applied for jobs in Saudi Arabia or the wider GCC while still in Pakistan?", options: [
+          { label: "Regularly", points: 2 },
+          { label: "Occasionally", points: 1 },
+          { label: "Once, or never", points: 0 } ] },
+        { text: "Have Saudi or GCC employers contacted you for interviews?", options: [
+          { label: "Multiple times", points: 2 },
+          { label: "Once or twice", points: 1 },
+          { label: "Never", points: 0 } ] }
+      ],
+      gap: "This is the heaviest section for a reason: employers hire proven people, and Dataflow verifies what you claim by contacting your past employers directly. If your documentation is thin, fix it now while you can still reach former managers — get signed experience letters on company letterhead with dates, job title and duties. If Saudi employers have never contacted you, the problem is reach rather than worth: apply directly through Saudi job portals and company career pages every week instead of waiting for an agent."
+    },
+    {
+      id: "C", name: "Language & communication", max: 12,
+      questions: [
+        { text: "How would you rate your English?", options: [
+          { label: "Professional working level", points: 4 },
+          { label: "Good", points: 3 },
+          { label: "Basic", points: 1 },
+          { label: "Very weak", points: 0 } ] },
+        { text: "How would you rate your Arabic?", options: [
+          { label: "Professional working level", points: 4 },
+          { label: "Conversational", points: 3 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "How strong are your interview and workplace communication skills?", options: [
+          { label: "Excellent", points: 4 },
+          { label: "Good", points: 3 },
+          { label: "Average", points: 1 },
+          { label: "Weak", points: 0 } ] }
+      ],
+      gap: "Language is the cheapest score on this page to raise, and it compounds with everything else. Workers with conversational Arabic negotiate better, get promoted sooner and are far harder to exploit, because they can read what they are signing and speak for themselves at the ministry. Six months of consistent daily practice moves this section more than a year of anything else here."
+    },
+    {
+      id: "D", name: "Practical & marketable skills", max: 10,
+      questions: [
+        { text: "Do you have a second marketable skill?", help: "Driving, IT, Excel, sales, digital marketing, video editing, graphic design, plumbing, electrical, HVAC, welding, fabrication, carpentry, masonry, professional cooking, heavy equipment or machinery operation.", options: [
+          { label: "Three or more strong marketable skills", points: 5 },
+          { label: "Two", points: 4 },
+          { label: "One strong skill", points: 3 },
+          { label: "Basic skills only", points: 1 },
+          { label: "No additional skill", points: 0 } ] },
+        { text: "How strong are your computer and digital skills?", options: [
+          { label: "Advanced", points: 3 },
+          { label: "Good", points: 2 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a valid driving licence and real driving experience?", options: [
+          { label: "Yes — car licence and strong experience", points: 2 },
+          { label: "Yes — basic experience", points: 1 },
+          { label: "No", points: 0 } ] }
+      ],
+      gap: "A second skill is what keeps you employed when the first job falls through, and it is the difference between waiting for work and finding it. Pick one trade or digital skill with visible demand, get certified in it, and be able to demonstrate it — not just claim it."
+    },
+    {
+      id: "E", name: "Network & connections", max: 10,
+      questions: [
+        { text: "Do you have family or relatives in Saudi Arabia?", options: [
+          { label: "Immediate family", points: 4 },
+          { label: "Close relatives", points: 3 },
+          { label: "Extended relatives", points: 2 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have people there who can genuinely help you find work — not just host you?", options: [
+          { label: "A strong professional network", points: 3 },
+          { label: "Some useful contacts", points: 2 },
+          { label: "One weak contact", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a reference or referral into a specific industry or company?", options: [
+          { label: "A strong referral", points: 3 },
+          { label: "A possible referral", points: 2 },
+          { label: "A general acquaintance", points: 1 },
+          { label: "None", points: 0 } ] }
+      ],
+      gap: "Most Gulf hiring happens through referral, and a relative who can host you is not the same as a contact who can put your CV in front of a hiring manager. Spend the months before you go building the second kind: find people already doing your job in the Kingdom, contact them directly, and ask about their employer rather than asking for a favour."
+    },
+    {
+      id: "F", name: "Financial preparation", max: 16,
+      questions: [
+        { text: "How will you financially support yourself after arriving?", options: [
+          { label: "Personal savings covering 6+ months", points: 5 },
+          { label: "Family support available for 6+ months", points: 4 },
+          { label: "3–6 months of backup", points: 3 },
+          { label: "1–3 months", points: 1 },
+          { label: "No reliable backup", points: 0 } ] },
+        { text: "Do you have a clear plan for accommodation?", options: [
+          { label: "Employer-provided, confirmed in the contract", points: 3 },
+          { label: "Free or low-cost with family", points: 3 },
+          { label: "A temporary arrangement", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If you don't find a job within 3 months, what will you do?", options: [
+          { label: "A clear financial and employment contingency plan", points: 3 },
+          { label: "Some backup plan", points: 2 },
+          { label: "Depend on relatives", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If you don't find a job within 6 months, could you survive financially or return home?", options: [
+          { label: "Yes, comfortably", points: 3 },
+          { label: "Yes, with difficulty", points: 2 },
+          { label: "Maybe", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Have you budgeted the full cost of going — fees, medical, attestation, verification, ticket, first months — and can you cover it without debt?", options: [
+          { label: "Fully, without borrowing", points: 2 },
+          { label: "Mostly", points: 1 },
+          { label: "Only by borrowing or selling assets", points: 0 } ] }
+      ],
+      gap: "Money is what converts a bad month into a disaster. People who go without a cushion take the first exploitative offer they are given, because they cannot afford to refuse it — and that is exactly how workers end up trapped. Do not travel funded by debt or a sold asset. Build six months of living costs plus a return ticket you could buy at any time, and treat that as non-negotiable."
+    },
+    {
+      id: "G", name: "Career strategy & adaptability", max: 10,
+      questions: [
+        { text: "Do you have a specific target job?", options: [
+          { label: "A specific job title, industry and realistic target", points: 3 },
+          { label: "A general field", points: 2 },
+          { label: "“Any job”", points: 0 } ] },
+        { text: "Have you researched the Saudi market for your profession — salary range, demand, who actually hires?", options: [
+          { label: "Extensive research", points: 2 },
+          { label: "Some research", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Are you willing to start in a lower position or salary than your ideal target?", help: "This is not about accepting exploitation. It measures whether you understand that your first Saudi job may not be your final one.", options: [
+          { label: "Yes", points: 2 },
+          { label: "Depends on circumstances", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Are you willing to work outside your original profession if necessary?", options: [
+          { label: "Yes, if reasonable", points: 2 },
+          { label: "Maybe", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is your main reason for going?", options: [
+          { label: "Career development, a specific profession, GCC experience or a business opportunity", points: 1 },
+          { label: "“I'll go first and figure everything out later”", points: 0 } ] }
+      ],
+      gap: "“Any job” is not a plan, and it is the answer that most reliably precedes a bad outcome. Employers hire for a named role. Pick one target job title, learn what it pays in the Kingdom and which companies hire for it, and aim the whole application at that — then stay flexible about the first step, not about the direction."
+    },
+    {
+      id: "H", name: "Legal & documentation readiness", max: 10,
+      questions: [
+        { text: "How long is your passport valid?", options: [
+          { label: "2 years or more", points: 2 },
+          { label: "1–2 years", points: 1 },
+          { label: "Under a year, or expired", points: 0 } ] },
+        { text: "Have you read the contract's terms on end-of-service, annual leave, ticket, notice period and who pays what?", options: [
+          { label: "Read and understood all of it", points: 3 },
+          { label: "Read most of it", points: 2 },
+          { label: "Skimmed it", points: 1 },
+          { label: "Haven't read it", points: 0 } ] },
+        { text: "Do you know that you must never hand your original passport to an employer or agent — and have you kept certified copies of every document?", options: [
+          { label: "Yes — copies kept, and I know my rights", points: 2 },
+          { label: "Partly", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is the status of your medical (GAMCA/Wafid) and police clearance?", options: [
+          { label: "Complete", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started", points: 0 } ] },
+        { text: "Do you know how you would leave the job or the country if things went wrong?", help: "Transfer rules, exit procedure, and the Pakistani mission's contact details.", options: [
+          { label: "Yes, clearly", points: 1 },
+          { label: "Not really", points: 0 } ] }
+      ],
+      gap: "The documents are the job. Workers who lose years to a bad placement almost always lost them at this stage — an unread clause, a surrendered passport, an expired medical. Read every line of the contract before signing, keep certified copies of everything in a second location, never surrender an original document to anyone, and save the Pakistani embassy and consulate numbers in your phone before you fly."
+    }
+  ],
+
+  /* ---- Bands. Adjustable after seeing real answers. ---- */
+  bands: [
+    { min: 80, tone: "go", title: "Ready — go, with a plan",
+      body: "Your preparation is genuinely strong. Nothing here says wait. Work through the action list below, keep your financial cushion intact, and go in aiming at a named target job rather than an open search." },
+    { min: 65, tone: "close", title: "Nearly ready — close a few gaps first",
+      body: "You are close, and the gaps are specific rather than fundamental. Fix the weakest areas below over the next three to six months and you move into a much stronger position. Going now means going with a known, avoidable weakness." },
+    { min: 50, tone: "wait", title: "Not yet — give it 6–12 months",
+      body: "There is a real foundation here, but not enough to absorb a setback. Going at this level usually means arriving, running low on money, and taking whatever is offered. Spend six to twelve months on the areas below, then take this again." },
+    { min: 0, tone: "stop", title: "Do not go yet — high risk of losing money",
+      body: "On these answers, going now would most likely cost you your savings without producing a stable job. That is not a judgement of you — it is what the gaps below add up to. Every one of them can be closed. Work through them and take this again." }
+  ],
+
+  /* ---- Post-arrival playbook ---- */
+  first90: [
+    { title: "Your employer has 90 days to get your iqama — track it",
+      body: "The sponsor must apply for your iqama and work permit within 90 days of arrival. Until you have it you cannot open a bank account, sign a rental contract, get a driving licence or use most government services. Ask for written confirmation that the application has been filed, and note the date you landed." },
+    { title: "Know what happens if they miss the deadline",
+      body: "If the employer fails to complete the iqama process within 90 days, you gain the right to transfer to a new employer without their approval. That is your leverage. Most workers never learn it." },
+    { title: "Get your own copy of everything on day one",
+      body: "Photograph your contract, iqama, passport and every receipt, and store them somewhere you can reach without your phone. Keep your original passport. If anyone asks you to hand it over, that is a violation, not a formality." },
+    { title: "Open a bank account the moment the iqama lands",
+      body: "Salary must reach an account in your name — cash-in-hand arrangements leave no record of whether you were paid. Set up your remittance channel through a licensed bank or exchange, never an informal courier." },
+    { title: "Check the contract you sign there against the one you signed here",
+      body: "Compare the Arabic contract you are given in the Kingdom against the one you signed in Pakistan. If salary, role or hours differ, raise it immediately and in writing — the discrepancy is far harder to challenge six months later." },
+    { title: "Register with the Pakistani mission",
+      body: "Save the embassy in Riyadh and the consulate in Jeddah in your phone before you fly. If your contract was protected by the Protectorate of Emigrants you are entitled to their assistance — but only if you can reach them." },
+    { title: "Don't send everything home in month one",
+      body: "Hold your cushion until the job is confirmed stable and the iqama is issued. The pressure to remit immediately is enormous, and it is what leaves people stranded when a job collapses in month three." }
+  ],
+
+  boosters: [
+    { title: "Arabic to conversational level",
+      body: "The highest-return investment available to you. It changes what you can negotiate, what you can read before signing, and how quickly you are promoted." },
+    { title: "A recognised certification in your actual field",
+      body: "Not a general course — the specific credential employers in your target industry name in their job adverts." },
+    { title: "A Saudi driving licence",
+      body: "Converts a large number of roles from inaccessible to accessible, and is worth real money in logistics, sales and field work." },
+    { title: "Aim at sectors that are not being localised",
+      body: "Healthcare specialisms and technical/IT roles carry lower Saudization targets than administrative, clerical and customer-facing work. Where you aim matters more than how hard you try." },
+    { title: "Build a verifiable record from day one",
+      body: "Keep signed experience letters, payslips and contracts for every role. It is what makes your next move — inside the Kingdom or beyond it — possible." }
+  ]
+};
+
+/* Country pack: United Arab Emirates
+ * DRAFT — assembled from public research, not from the owner's own expertise.
+ * Review the wording, points and bands before relying on it. See AUTHORING.md.
+ */
+PACKS["uae"] = {
+  id: "uae",
+  name: "United Arab Emirates",
+  flag: "\u{1F1E6}\u{1F1EA}",
+  origin: "Pakistan",
+  authored: "research",
+  updated: "2026-09-08",
+
+  intro: "For a Pakistan-based worker weighing a move to the Emirates. The rules here differ from Saudi Arabia in ways that matter — read the questions carefully rather than assuming.",
+
+  knockouts: [
+    {
+      id: "k-visa",
+      text: "What visa will you actually travel on?",
+      help: "Unlike Saudi Arabia, a visit visa can legally become an employment visa here — but only through an employer, and never by yourself.",
+      options: [
+        { label: "An employment visa arranged by an employer before I travel", severity: "ok" },
+        { label: "A visit visa, with a signed offer, and the employer will convert it", severity: "warn" },
+        { label: "A visit visa, and I'll look for work after I arrive", severity: "warn" },
+        { label: "I don't know yet — the agent hasn't told me", severity: "stop" }
+      ],
+      stopTitle: "You cannot plan around a visa nobody will name",
+      stopBody: "An agent who will not tell you which visa you are travelling on is hiding something. The visa type determines whether you can legally work, how long you can stay and what it costs you if the job falls through. Get it in writing before you pay anyone.",
+      warnTitle: "Job-hunting on a visit visa is legal here, but the clock is expensive",
+      warnBody: "You may enter on a visit visa and convert to employment without leaving the country — but only an employer can file that conversion, and you cannot legally work a single day before it completes. Conversion typically takes two to three weeks after labour approval. If your visa expires first, overstay is charged at AED 50 per day with no grace period since February 2026. Budget for the full search plus the conversion, not just the flight."
+    },
+    {
+      id: "k-contract",
+      text: "Has your offer been registered with MOHRE, and does it match what you were promised?",
+      help: "The Ministry of Human Resources and Emiratisation registers the official offer letter and contract.",
+      options: [
+        { label: "Yes — I've seen the MOHRE offer letter and it matches", severity: "ok" },
+        { label: "A company offer, but nothing registered with MOHRE yet", severity: "warn" },
+        { label: "Only a verbal or WhatsApp promise", severity: "stop" },
+        { label: "No offer at all", severity: "stop" }
+      ],
+      stopTitle: "There is nothing to hold the employer to",
+      stopBody: "The MOHRE-registered contract is the document that governs your job. A promise outside that system cannot be enforced by the ministry, a court or your embassy. Do not travel on a conversation.",
+      warnTitle: "The MOHRE contract is the one that counts",
+      warnBody: "Company offer letters and the registered MOHRE contract routinely differ. Insist on seeing the registered version and compare salary, job title, hours and benefits line by line before you sign anything."
+    },
+    {
+      id: "k-beoe",
+      text: "Is your recruiter a BEOE-licensed Overseas Employment Promoter, and will your contract be stamped by the Protectorate of Emigrants?",
+      help: "This is Pakistan-side protection and applies wherever you are going.",
+      options: [
+        { label: "Yes — I verified the licence myself and protection is arranged", severity: "ok" },
+        { label: "The agent says yes, but I haven't verified it", severity: "warn" },
+        { label: "No — going through a personal contact, without protection", severity: "stop" },
+        { label: "I don't know what this is", severity: "stop" }
+      ],
+      stopTitle: "You would be travelling outside Pakistan's legal protection",
+      stopBody: "Every Pakistani going abroad on a work visa is legally required to have their Foreign Service Agreement protected by the Protectorate of Emigrants. Protection is what entitles you to assistance from the Pakistani mission in the UAE if the employer breaks the contract. Verify your agent's licence on beoe.gov.pk before paying anyone anything.",
+      warnTitle: "Verify the licence yourself",
+      warnBody: "An agent's word about their own licence is worth nothing. The BEOE publishes the list of active OEP licences — check it yourself, and confirm the specific office you are dealing with."
+    },
+    {
+      id: "k-money",
+      text: "Has anyone asked you for money beyond documented, receipted government fees?",
+      options: [
+        { label: "No — only official fees, with receipts", severity: "ok" },
+        { label: "A modest amount, and I got a receipt", severity: "warn" },
+        { label: "A large amount in cash, with no receipt", severity: "stop" }
+      ],
+      stopTitle: "This is the standard shape of a recruitment scam",
+      stopBody: "Large unreceipted cash demands are the defining feature of overseas job fraud in Pakistan. A legitimate employer does not charge you to be hired — in the UAE, recruitment costs are the employer's to carry. Stop paying, keep every message and receipt, and verify the employer using contact details you found yourself.",
+      warnTitle: "Keep every receipt",
+      warnBody: "Even documented fees are worth checking against the official schedule, and the paperwork is your evidence if the placement goes wrong."
+    },
+    {
+      id: "k-wps",
+      text: "How will your salary actually be paid?",
+      help: "The Wage Protection System routes salaries through banks so there is a record that you were paid.",
+      options: [
+        { label: "Through WPS, into a bank account in my name, stated in the contract", severity: "ok" },
+        { label: "The contract states a salary but doesn't mention WPS", severity: "warn" },
+        { label: "Cash in hand", severity: "stop" },
+        { label: "I don't know", severity: "warn" }
+      ],
+      stopTitle: "Cash wages leave you unable to prove you were underpaid",
+      stopBody: "Private-sector salaries in the UAE are meant to run through the Wage Protection System. Cash payment removes the only independent record that you were paid, or not paid, and it is the arrangement behind most wage-theft cases. Insist on WPS into an account in your own name.",
+      warnTitle: "Confirm the WPS arrangement in writing",
+      warnBody: "MOHRE now checks WPS compliance in real time when an employer applies for a visa, and a single month of late reporting can block the whole company's new permits. An employer vague about WPS is worth checking on before you commit."
+    },
+    {
+      id: "k-licence",
+      text: "Does your profession require UAE licensing or credential verification — and have you started it?",
+      help: "DHA, DoH or MOHAP for health workers; engineering and several other fields have their own registration.",
+      options: [
+        { label: "Not required for my profession — I checked", severity: "ok" },
+        { label: "Required, and my licence or verification is complete", severity: "ok" },
+        { label: "Required — started but not finished", severity: "warn" },
+        { label: "Required — I haven't started", severity: "stop" },
+        { label: "I don't know whether it's required", severity: "stop" }
+      ],
+      stopTitle: "You may not be allowed to practise your profession",
+      stopBody: "Regulated professions need a licence from the relevant emirate's health authority or professional body before you can legally work. Verification contacts your universities and past employers directly, so it takes weeks to months. Find out what applies to you and start before you commit to anything.",
+      warnTitle: "Finish the licensing before you travel",
+      warnBody: "An incomplete licence can leave you in the country unable to work while your savings drain and your visit visa runs down."
+    }
+  ],
+
+  sections: [
+    {
+      id: "A", name: "Education & qualification", max: 12,
+      questions: [
+        { text: "What is your highest level of education?", help: "MOHRE classes you as skilled with a degree or equivalent diploma plus a salary at or above AED 4,000 — which affects which employers can hire you.", options: [
+          { label: "Master's or PhD", points: 4 },
+          { label: "Bachelor's", points: 3 },
+          { label: "Diploma", points: 2 },
+          { label: "High school", points: 1 },
+          { label: "Below high school", points: 0 } ] },
+        { text: "Is your education relevant to the work you want to do in the UAE?", options: [
+          { label: "Highly relevant", points: 4 },
+          { label: "Somewhat relevant", points: 2 },
+          { label: "Not relevant", points: 0 } ] },
+        { text: "Do you hold professional or technical certifications relevant to your target job?", options: [
+          { label: "Multiple relevant certifications", points: 2 },
+          { label: "One relevant certification", points: 1 },
+          { label: "Only unrelated certifications, or none", points: 0 } ] },
+        { text: "Are your degree and documents attested (HEC, Pakistan MOFA, UAE embassy)?", options: [
+          { label: "All attested and in hand", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started, or I don't know what's needed", points: 0 } ] }
+      ],
+      gap: "Attestation is not optional here and it is slow. Without a fully attested degree your employer cannot complete the work permit, and a job offer can lapse while you chase paperwork. Start HEC, MOFA and UAE embassy attestation before you begin applying, not after you get an offer."
+    },
+    {
+      id: "B", name: "Work experience & employability", max: 20,
+      questions: [
+        { text: "How many years of relevant work experience do you have?", options: [
+          { label: "5 or more", points: 6 },
+          { label: "3–4", points: 5 },
+          { label: "1–2", points: 3 },
+          { label: "Less than 1", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Is that experience directly related to the job you want in the UAE?", options: [
+          { label: "Directly related", points: 4 },
+          { label: "Partially related", points: 2 },
+          { label: "Weakly related", points: 1 },
+          { label: "Not related", points: 0 } ] },
+        { text: "Have you worked in a formal, registered organisation rather than only informal work?", options: [
+          { label: "3+ years in registered companies", points: 3 },
+          { label: "1–2 years", points: 2 },
+          { label: "Some informal-sector work only", points: 1 },
+          { label: "No formal employment", points: 0 } ] },
+        { text: "Can you produce verifiable evidence of your experience — letters, payslips and contracts an outside verifier could confirm?", options: [
+          { label: "Strong documentation for every role", points: 3 },
+          { label: "Some documentation", points: 2 },
+          { label: "Limited documentation", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Have you applied for UAE jobs directly, from Pakistan?", options: [
+          { label: "Regularly, to named companies", points: 2 },
+          { label: "Occasionally", points: 1 },
+          { label: "Once, or never", points: 0 } ] },
+        { text: "Have UAE employers contacted you for interviews?", options: [
+          { label: "Multiple times", points: 2 },
+          { label: "Once or twice", points: 1 },
+          { label: "Never", points: 0 } ] }
+      ],
+      gap: "The UAE market is more open to direct application than Saudi Arabia — which cuts both ways, because you are competing with the whole world rather than only with other Pakistanis. Apply directly to named companies rather than through agents, and make your documentation airtight: signed experience letters on letterhead, with dates, title and duties."
+    },
+    {
+      id: "C", name: "Language & communication", max: 10,
+      questions: [
+        { text: "How would you rate your English?", help: "English, not Arabic, is the working language of most UAE private-sector workplaces.", options: [
+          { label: "Professional working level", points: 5 },
+          { label: "Good", points: 4 },
+          { label: "Basic", points: 2 },
+          { label: "Very weak", points: 0 } ] },
+        { text: "How would you rate your Arabic?", options: [
+          { label: "Conversational or better", points: 2 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "How strong are your interview and workplace communication skills?", options: [
+          { label: "Excellent", points: 3 },
+          { label: "Good", points: 2 },
+          { label: "Average", points: 1 },
+          { label: "Weak", points: 0 } ] }
+      ],
+      gap: "English carries almost all the weight here — most UAE workplaces run in it, and weak English caps your salary far more than weak Arabic does. If your English is basic, that is the single highest-return thing you can fix before applying, and it is fixable in months rather than years."
+    },
+    {
+      id: "D", name: "Practical & marketable skills", max: 10,
+      questions: [
+        { text: "Do you have a second marketable skill?", help: "Driving, IT, Excel, sales, digital marketing, video editing, graphic design, plumbing, electrical, HVAC, welding, fabrication, carpentry, professional cooking, heavy equipment or machinery operation.", options: [
+          { label: "Three or more strong marketable skills", points: 5 },
+          { label: "Two", points: 4 },
+          { label: "One strong skill", points: 3 },
+          { label: "Basic skills only", points: 1 },
+          { label: "No additional skill", points: 0 } ] },
+        { text: "How strong are your computer and digital skills?", options: [
+          { label: "Advanced", points: 3 },
+          { label: "Good", points: 2 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a valid driving licence and real driving experience?", options: [
+          { label: "Yes — car licence and strong experience", points: 2 },
+          { label: "Yes — basic experience", points: 1 },
+          { label: "No", points: 0 } ] }
+      ],
+      gap: "A second skill is what keeps you employed when the first job falls through. Pick one trade or digital skill with visible demand, get certified in it, and be able to demonstrate it rather than just claim it."
+    },
+    {
+      id: "E", name: "Network & connections", max: 8,
+      questions: [
+        { text: "Do you have family or relatives in the UAE?", options: [
+          { label: "Immediate family", points: 3 },
+          { label: "Close relatives", points: 2 },
+          { label: "Extended relatives", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have people there who can genuinely help you find work — not just host you?", options: [
+          { label: "A strong professional network", points: 3 },
+          { label: "Some useful contacts", points: 2 },
+          { label: "One weak contact", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a reference or referral into a specific company?", options: [
+          { label: "A strong referral", points: 2 },
+          { label: "A possible referral", points: 1 },
+          { label: "None", points: 0 } ] }
+      ],
+      gap: "Connections matter less here than in Saudi Arabia, but somewhere to stay during a job search is worth real money — Dubai accommodation is the fastest way to burn through a budget. Separate the two questions in your planning: who can host you, and who can actually get your CV read."
+    },
+    {
+      id: "F", name: "Financial preparation", max: 18,
+      questions: [
+        { text: "How will you financially support yourself after arriving?", help: "Cost of living in Dubai and Abu Dhabi is high — budget against real rents, not optimistic ones.", options: [
+          { label: "Personal savings covering 6+ months", points: 6 },
+          { label: "Family support available for 6+ months", points: 5 },
+          { label: "3–6 months of backup", points: 3 },
+          { label: "1–3 months", points: 1 },
+          { label: "No reliable backup", points: 0 } ] },
+        { text: "Do you have a clear plan for accommodation?", options: [
+          { label: "Employer-provided, confirmed in the contract", points: 3 },
+          { label: "Free or low-cost with family", points: 3 },
+          { label: "A temporary arrangement", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If you don't find a job within 3 months, what will you do?", options: [
+          { label: "A clear financial and employment contingency plan", points: 3 },
+          { label: "Some backup plan", points: 2 },
+          { label: "Depend on relatives", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If you don't find a job within 6 months, could you survive financially or return home?", options: [
+          { label: "Yes, comfortably", points: 3 },
+          { label: "Yes, with difficulty", points: 2 },
+          { label: "Maybe", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Have you budgeted the full cost — fees, attestation, medical, ticket, visa conversion and first months — and can you cover it without debt?", options: [
+          { label: "Fully, without borrowing", points: 3 },
+          { label: "Mostly", points: 1 },
+          { label: "Only by borrowing or selling assets", points: 0 } ] }
+      ],
+      gap: "Money is weighted heavily here because the UAE punishes running out of it faster than most places. Rent is high, a visit visa expires on a fixed date, and overstay costs AED 50 every day with no grace period. Arrive with six months of real living costs and a return ticket you could buy at any moment."
+    },
+    {
+      id: "G", name: "Career strategy & adaptability", max: 12,
+      questions: [
+        { text: "Do you have a specific target job?", options: [
+          { label: "A specific job title, industry and realistic target", points: 3 },
+          { label: "A general field", points: 2 },
+          { label: "“Any job”", points: 0 } ] },
+        { text: "Have you researched what your role actually pays in the UAE, against what it costs to live there?", options: [
+          { label: "Extensively — I know the salary band and my monthly costs", points: 3 },
+          { label: "Some research", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you understand how Emiratisation affects your target role?", help: "Skilled-role quotas rise each year for larger private companies.", options: [
+          { label: "Yes — I know where my role sits", points: 2 },
+          { label: "Roughly", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Are you willing to start in a lower position or salary than your ideal target?", options: [
+          { label: "Yes", points: 2 },
+          { label: "Depends on circumstances", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is your main reason for going?", options: [
+          { label: "Career development, a specific profession or a business opportunity", points: 2 },
+          { label: "“I'll go first and figure everything out later”", points: 0 } ] }
+      ],
+      gap: "A high UAE salary is not a high UAE income — rent, schooling and transport take most of it, and people routinely move for a number that turns out to be worse than what they left. Do the arithmetic on take-home minus real living costs for the specific emirate you are targeting, before you accept anything."
+    },
+    {
+      id: "H", name: "Legal & documentation readiness", max: 10,
+      questions: [
+        { text: "How long is your passport valid?", options: [
+          { label: "2 years or more", points: 2 },
+          { label: "1–2 years", points: 1 },
+          { label: "Under a year, or expired", points: 0 } ] },
+        { text: "Have you read the contract's terms on end-of-service gratuity, leave, ticket, notice period and probation?", options: [
+          { label: "Read and understood all of it", points: 3 },
+          { label: "Read most of it", points: 2 },
+          { label: "Skimmed it", points: 1 },
+          { label: "Haven't read it", points: 0 } ] },
+        { text: "Do you know that you must never hand your original passport to an employer — and have you kept certified copies of every document?", help: "Withholding a worker's passport is illegal in the UAE.", options: [
+          { label: "Yes — copies kept, and I know my rights", points: 2 },
+          { label: "Partly", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is the status of your medical and police clearance?", options: [
+          { label: "Complete", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started", points: 0 } ] },
+        { text: "Do you know how you would leave the job or the country if things went wrong?", help: "Notice periods, MOHRE complaints, and the Pakistani mission's contact details.", options: [
+          { label: "Yes, clearly", points: 1 },
+          { label: "Not really", points: 0 } ] }
+      ],
+      gap: "The UAE gives workers more formal protection than many neighbours — MOHRE takes complaints, passport withholding is illegal, and WPS creates a payment record — but none of it helps if you do not know the rules or cannot show your own paperwork. Read the contract fully, keep certified copies somewhere separate, and save the complaint channels before you need them."
+    }
+  ],
+
+  bands: [
+    { min: 80, tone: "go", title: "Ready — go, with a plan",
+      body: "Your preparation is strong. Work through the actions below, protect your financial cushion, and go in targeting named companies rather than running an open search." },
+    { min: 65, tone: "close", title: "Nearly ready — close a few gaps first",
+      body: "You are close, and the gaps are specific. Fix the weakest areas below over the next three to six months. Going now means going with a known, avoidable weakness in an expensive market." },
+    { min: 50, tone: "wait", title: "Not yet — give it 6–12 months",
+      body: "There is a foundation here, but not enough to absorb a slow job search in a high-cost country. Spend six to twelve months on the areas below, then take this again." },
+    { min: 0, tone: "stop", title: "Do not go yet — high risk of losing money",
+      body: "On these answers, going now would most likely cost you your savings without producing a stable job — and UAE living costs would drain them faster than you expect. Work through the gaps below and take this again." }
+  ],
+
+  first90: [
+    { title: "Do not work a single day before your status is converted",
+      body: "If you entered on a visit visa, you cannot legally work until the employment residence visa is issued — no matter what the employer says about starting immediately. Working before conversion is a violation that falls on you, not on them." },
+    { title: "Watch the visa expiry date, not the job",
+      body: "Overstay runs at AED 50 per day and the grace period was removed in February 2026. Know your exact expiry date and what the conversion timeline is, and keep enough money to leave if it slips." },
+    { title: "Get your Emirates ID and labour card, and check the details",
+      body: "Confirm the job title and salary recorded on your permit match your contract. Discrepancies are far easier to fix in week one than in month six." },
+    { title: "Confirm your salary is arriving through WPS",
+      body: "Check that payments land in your own bank account through the Wage Protection System. If wages are late or cash-based, that is a documented pattern worth acting on early through MOHRE." },
+    { title: "Keep your passport",
+      body: "An employer holding your passport is acting illegally in the UAE. Keep the original and store certified copies somewhere separate from where you live." },
+    { title: "Learn the MOHRE complaint route before you need it",
+      body: "MOHRE handles wage and contract disputes, and knowing the channel in advance changes what you are willing to accept. Save it alongside the Pakistani embassy in Abu Dhabi and consulate in Dubai." },
+    { title: "Hold your cushion for the first few months",
+      body: "Rent deposits and setup costs land early and heavily. Do not remit everything home until the job and the visa are both confirmed stable." }
+  ],
+
+  boosters: [
+    { title: "English to professional level",
+      body: "The highest-return investment for the UAE specifically. It is the working language, and it sets your salary ceiling more than any other single factor." },
+    { title: "A UAE driving licence",
+      body: "Opens a large set of roles in logistics, sales and field work, and reduces what you spend getting to them." },
+    { title: "A certification your target industry actually names",
+      body: "Look at real job adverts for your target title and get the specific credential they list, rather than a general course." },
+    { title: "Aim at roles below the Emiratisation quota pressure",
+      body: "Skilled-role quotas rise annually for larger private companies. Smaller firms, free-zone companies and specialised technical roles face different pressure — where you aim changes your odds." },
+    { title: "Understand take-home versus cost of living",
+      body: "The workers who do well here are the ones who negotiated on net position rather than headline salary. Learn the real numbers for your emirate before you accept." }
+  ]
+};
+
+/* Country pack: Qatar
+ * DRAFT — assembled from public research, not from the owner's own expertise.
+ * Review the wording, points and bands before relying on it. See AUTHORING.md.
+ */
+PACKS["qatar"] = {
+  id: "qatar",
+  name: "Qatar",
+  flag: "\u{1F1F6}\u{1F1E6}",
+  origin: "Pakistan",
+  authored: "research",
+  updated: "2026-09-08",
+
+  intro: "For a Pakistan-based worker weighing a move to Qatar. Qatar's labour rules changed substantially after 2020 — several things that are true in Saudi Arabia are no longer true here.",
+
+  knockouts: [
+    {
+      id: "k-visa",
+      text: "What visa will you actually travel on?",
+      options: [
+        { label: "A work visa arranged by an employer, with a signed contract", severity: "ok" },
+        { label: "A visit visa — I've been told it converts to work there", severity: "stop" },
+        { label: "A visit visa, and I'll look for work after I arrive", severity: "stop" },
+        { label: "I don't know yet — the agent hasn't told me", severity: "stop" }
+      ],
+      stopTitle: "You would arrive without the right to work",
+      stopBody: "Work in Qatar requires a work visa and residence permit arranged by an employer before you travel. Arriving on a visit visa to look for work leaves you unable to take a job legally, burning savings on a clock you do not control, and exposed to overstay penalties and deportation. Do not travel until the work visa exists."
+    },
+    {
+      id: "k-contract",
+      text: "Is your contract registered with Qatar's Ministry of Labour, and have you read it?",
+      help: "Contracts are registered and verified through the ministry's electronic system.",
+      options: [
+        { label: "Yes — registered, and I've read the version that was filed", severity: "ok" },
+        { label: "I have a signed contract but I don't know if it's registered", severity: "warn" },
+        { label: "Only a verbal or WhatsApp promise", severity: "stop" },
+        { label: "No contract", severity: "stop" }
+      ],
+      stopTitle: "An unregistered promise is not a job",
+      stopBody: "Qatar registers employment contracts digitally through the Ministry of Labour, and the registered contract is what governs your pay, hours and end-of-service. A promise outside that system cannot be enforced. Get the registered contract before you travel.",
+      warnTitle: "Confirm the contract was actually registered",
+      warnBody: "A signature is not registration. Ask for confirmation that the contract is filed in the ministry's system, and check that the registered terms match what you signed."
+    },
+    {
+      id: "k-beoe",
+      text: "Is your recruiter a BEOE-licensed Overseas Employment Promoter, and will your contract be stamped by the Protectorate of Emigrants?",
+      help: "This is Pakistan-side protection and applies wherever you are going.",
+      options: [
+        { label: "Yes — I verified the licence myself and protection is arranged", severity: "ok" },
+        { label: "The agent says yes, but I haven't verified it", severity: "warn" },
+        { label: "No — going through a personal contact, without protection", severity: "stop" },
+        { label: "I don't know what this is", severity: "stop" }
+      ],
+      stopTitle: "You would be travelling outside Pakistan's legal protection",
+      stopBody: "Every Pakistani going abroad on a work visa is legally required to have their Foreign Service Agreement protected by the Protectorate of Emigrants. Protection is what entitles you to assistance from the Pakistani mission in Qatar if the employer breaks the contract. Verify your agent's licence on beoe.gov.pk before paying anyone anything.",
+      warnTitle: "Verify the licence yourself",
+      warnBody: "An agent's word about their own licence is worth nothing. The BEOE publishes the list of active OEP licences — check it yourself, and confirm the specific office you are dealing with."
+    },
+    {
+      id: "k-money",
+      text: "Has anyone asked you for money beyond documented, receipted government fees?",
+      help: "Charging recruitment fees to the worker is prohibited under Qatar's rules — the employer carries those costs.",
+      options: [
+        { label: "No — only official fees, with receipts", severity: "ok" },
+        { label: "A modest amount, and I got a receipt", severity: "warn" },
+        { label: "A large amount in cash, with no receipt", severity: "stop" }
+      ],
+      stopTitle: "You are being charged for something the employer must pay for",
+      stopBody: "Recruitment costs in Qatar are the employer's responsibility, not yours. Large unreceipted cash demands are the defining feature of overseas job fraud — and workers who arrive already in debt are the least able to walk away from a bad job. Stop paying, keep every message and receipt, and verify the employer independently.",
+      warnTitle: "Keep every receipt",
+      warnBody: "Keep the paperwork for anything you have paid. It is your evidence if the placement goes wrong, and fees charged to you may not have been legitimate in the first place."
+    },
+    {
+      id: "k-wage",
+      text: "Does your offered package meet Qatar's minimum wage rules?",
+      help: "QAR 1,000 basic, plus QAR 500 accommodation allowance if housing is not provided, plus QAR 300 food allowance if meals are not provided.",
+      options: [
+        { label: "Yes — I checked the basic wage and the allowances against the rules", severity: "ok" },
+        { label: "The salary looks fine but I haven't checked the allowance breakdown", severity: "warn" },
+        { label: "No — the offer is below the minimum", severity: "stop" },
+        { label: "I don't know what I'm being offered in writing", severity: "stop" }
+      ],
+      stopTitle: "The offer is below what the law requires",
+      stopBody: "Qatar sets a floor of QAR 1,000 basic pay, with an additional QAR 500 for accommodation and QAR 300 for food where the employer does not provide them. An offer below that floor is either unlawful or is not the offer you will actually receive. Either way it tells you what kind of employer you are dealing with.",
+      warnTitle: "Check the breakdown, not just the headline number",
+      warnBody: "A package that looks adequate can still be structured wrongly — a high basic with no housing where housing is not provided, or allowances quietly folded in. Compare the basic wage and each allowance separately against the rules."
+    },
+    {
+      id: "k-licence",
+      text: "Does your profession require Qatari licensing or credential verification — and have you started it?",
+      help: "The Department of Healthcare Professions for health workers; engineering and several other fields have their own registration.",
+      options: [
+        { label: "Not required for my profession — I checked", severity: "ok" },
+        { label: "Required, and my licence or verification is complete", severity: "ok" },
+        { label: "Required — started but not finished", severity: "warn" },
+        { label: "Required — I haven't started", severity: "stop" },
+        { label: "I don't know whether it's required", severity: "stop" }
+      ],
+      stopTitle: "You may not be allowed to practise your profession",
+      stopBody: "Regulated professions need registration and primary-source verification of your credentials before you can legally work. Verification contacts your universities and past employers directly, so it takes weeks to months, and gaps in your documents surface there. Find out what applies to you and start before you commit.",
+      warnTitle: "Finish the licensing before you travel",
+      warnBody: "An incomplete licence can leave you in the country unable to work legally while your savings drain."
+    }
+  ],
+
+  sections: [
+    {
+      id: "A", name: "Education & qualification", max: 12,
+      questions: [
+        { text: "What is your highest level of education?", options: [
+          { label: "Master's or PhD", points: 4 },
+          { label: "Bachelor's", points: 3 },
+          { label: "Diploma", points: 2 },
+          { label: "High school", points: 1 },
+          { label: "Below high school", points: 0 } ] },
+        { text: "Is your education relevant to the work you want to do in Qatar?", options: [
+          { label: "Highly relevant", points: 4 },
+          { label: "Somewhat relevant", points: 2 },
+          { label: "Not relevant", points: 0 } ] },
+        { text: "Do you hold professional or technical certifications relevant to your target job?", options: [
+          { label: "Multiple relevant certifications", points: 2 },
+          { label: "One relevant certification", points: 1 },
+          { label: "Only unrelated certifications, or none", points: 0 } ] },
+        { text: "Are your degree and documents attested (HEC, Pakistan MOFA, Qatar embassy)?", options: [
+          { label: "All attested and in hand", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started, or I don't know what's needed", points: 0 } ] }
+      ],
+      gap: "Attestation is slow and it blocks everything downstream — the work permit cannot complete without it. Start HEC, MOFA and Qatar embassy attestation before you begin applying, and add one certification that your target industry actually names in its job adverts."
+    },
+    {
+      id: "B", name: "Work experience & employability", max: 22,
+      questions: [
+        { text: "How many years of relevant work experience do you have?", options: [
+          { label: "5 or more", points: 7 },
+          { label: "3–4", points: 6 },
+          { label: "1–2", points: 3 },
+          { label: "Less than 1", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Is that experience directly related to the job you want in Qatar?", options: [
+          { label: "Directly related", points: 5 },
+          { label: "Partially related", points: 3 },
+          { label: "Weakly related", points: 1 },
+          { label: "Not related", points: 0 } ] },
+        { text: "Have you worked in a formal, registered organisation rather than only informal work?", options: [
+          { label: "3+ years in registered companies", points: 3 },
+          { label: "1–2 years", points: 2 },
+          { label: "Some informal-sector work only", points: 1 },
+          { label: "No formal employment", points: 0 } ] },
+        { text: "Can you produce verifiable evidence of your experience — letters, payslips and contracts an outside verifier could confirm?", options: [
+          { label: "Strong documentation for every role", points: 3 },
+          { label: "Some documentation", points: 2 },
+          { label: "Limited documentation", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Have you applied for Qatari jobs directly, from Pakistan?", options: [
+          { label: "Regularly, to named companies", points: 2 },
+          { label: "Occasionally", points: 1 },
+          { label: "Once, or never", points: 0 } ] },
+        { text: "Have Qatari employers contacted you for interviews?", options: [
+          { label: "Multiple times", points: 2 },
+          { label: "Once or twice", points: 1 },
+          { label: "Never", points: 0 } ] }
+      ],
+      gap: "Qatar's market is smaller than Saudi Arabia's or the UAE's, so proven, documented experience counts for proportionally more and speculative applications work less well. Get signed experience letters on company letterhead with dates, title and duties, and apply to named employers in your actual sector rather than broadcasting a CV."
+    },
+    {
+      id: "C", name: "Language & communication", max: 10,
+      questions: [
+        { text: "How would you rate your English?", help: "English is the common working language across most of Qatar's private sector.", options: [
+          { label: "Professional working level", points: 5 },
+          { label: "Good", points: 4 },
+          { label: "Basic", points: 2 },
+          { label: "Very weak", points: 0 } ] },
+        { text: "How would you rate your Arabic?", options: [
+          { label: "Conversational or better", points: 2 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "How strong are your interview and workplace communication skills?", options: [
+          { label: "Excellent", points: 3 },
+          { label: "Good", points: 2 },
+          { label: "Average", points: 1 },
+          { label: "Weak", points: 0 } ] }
+      ],
+      gap: "English does most of the work here. It is also what lets you read your own registered contract, raise a complaint through the ministry, and negotiate a move to a better employer — which Qatar now allows. Weak English is the difference between having rights and being able to use them."
+    },
+    {
+      id: "D", name: "Practical & marketable skills", max: 10,
+      questions: [
+        { text: "Do you have a second marketable skill?", help: "Driving, IT, Excel, sales, digital marketing, video editing, graphic design, plumbing, electrical, HVAC, welding, fabrication, carpentry, professional cooking, heavy equipment or machinery operation.", options: [
+          { label: "Three or more strong marketable skills", points: 5 },
+          { label: "Two", points: 4 },
+          { label: "One strong skill", points: 3 },
+          { label: "Basic skills only", points: 1 },
+          { label: "No additional skill", points: 0 } ] },
+        { text: "How strong are your computer and digital skills?", options: [
+          { label: "Advanced", points: 3 },
+          { label: "Good", points: 2 },
+          { label: "Basic", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a valid driving licence and real driving experience?", options: [
+          { label: "Yes — car licence and strong experience", points: 2 },
+          { label: "Yes — basic experience", points: 1 },
+          { label: "No", points: 0 } ] }
+      ],
+      gap: "A second skill is what makes you worth keeping, and — now that changing employers is possible — worth hiring away. Pick one trade or digital skill with visible demand, get certified, and be able to demonstrate it."
+    },
+    {
+      id: "E", name: "Network & connections", max: 8,
+      questions: [
+        { text: "Do you have family or relatives in Qatar?", options: [
+          { label: "Immediate family", points: 3 },
+          { label: "Close relatives", points: 2 },
+          { label: "Extended relatives", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have people there who can genuinely help you find work — not just host you?", options: [
+          { label: "A strong professional network", points: 3 },
+          { label: "Some useful contacts", points: 2 },
+          { label: "One weak contact", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you have a reference or referral into a specific company?", options: [
+          { label: "A strong referral", points: 2 },
+          { label: "A possible referral", points: 1 },
+          { label: "None", points: 0 } ] }
+      ],
+      gap: "Qatar is a small labour market where reputation travels fast, and referrals carry more weight than applications. Find people already doing your job there, ask about their employer rather than asking for a favour, and keep those contacts warm — they matter more later, when you are entitled to change jobs."
+    },
+    {
+      id: "F", name: "Financial preparation", max: 16,
+      questions: [
+        { text: "How will you financially support yourself after arriving?", options: [
+          { label: "Personal savings covering 6+ months", points: 5 },
+          { label: "Family support available for 6+ months", points: 4 },
+          { label: "3–6 months of backup", points: 3 },
+          { label: "1–3 months", points: 1 },
+          { label: "No reliable backup", points: 0 } ] },
+        { text: "Is accommodation provided, and is that written into the contract?", help: "If housing is not provided, the QAR 500 accommodation allowance is owed on top of basic pay.", options: [
+          { label: "Provided and stated in the contract", points: 3 },
+          { label: "Not provided, but the allowance is stated", points: 3 },
+          { label: "A temporary or informal arrangement", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If the job ends within 3 months, what will you do?", options: [
+          { label: "A clear financial and employment contingency plan", points: 3 },
+          { label: "Some backup plan", points: 2 },
+          { label: "Depend on relatives", points: 1 },
+          { label: "No plan", points: 0 } ] },
+        { text: "If you were out of work for 6 months, could you survive financially or return home?", options: [
+          { label: "Yes, comfortably", points: 3 },
+          { label: "Yes, with difficulty", points: 2 },
+          { label: "Maybe", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Have you budgeted the full cost of going and can you cover it without debt?", options: [
+          { label: "Fully, without borrowing", points: 2 },
+          { label: "Mostly", points: 1 },
+          { label: "Only by borrowing or selling assets", points: 0 } ] }
+      ],
+      gap: "Arriving in debt is what removes your ability to use the rights Qatar now gives you. A worker with savings can serve notice and move to a better employer; a worker who borrowed to get there cannot. Build the cushion before you go, not after."
+    },
+    {
+      id: "G", name: "Career strategy & adaptability", max: 12,
+      questions: [
+        { text: "Do you have a specific target job?", options: [
+          { label: "A specific job title, industry and realistic target", points: 3 },
+          { label: "A general field", points: 2 },
+          { label: "“Any job”", points: 0 } ] },
+        { text: "Have you researched what your role actually pays in Qatar, against what it costs to live there?", options: [
+          { label: "Extensively — I know the salary band and my monthly costs", points: 3 },
+          { label: "Some research", points: 1 },
+          { label: "None", points: 0 } ] },
+        { text: "Do you know that you can change employers in Qatar without your current employer's permission?", help: "The No-Objection Certificate requirement was abolished; you serve your notice period and move through the ministry's system.", options: [
+          { label: "Yes — and I know the notice periods", points: 2 },
+          { label: "I'd heard something about it", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "Are you willing to start in a lower position or salary than your ideal target?", options: [
+          { label: "Yes", points: 2 },
+          { label: "Depends on circumstances", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is your main reason for going?", options: [
+          { label: "Career development, a specific profession or a business opportunity", points: 2 },
+          { label: "“I'll go first and figure everything out later”", points: 0 } ] }
+      ],
+      gap: "The most valuable thing to understand about Qatar is that your first job no longer has to be your only job — the NOC requirement is gone, and you can move after serving notice. That changes the calculation: a modest first role with a legitimate, registered employer is a far better bet than a higher number from someone who will not put it in the system."
+    },
+    {
+      id: "H", name: "Legal & documentation readiness", max: 10,
+      questions: [
+        { text: "How long is your passport valid?", options: [
+          { label: "2 years or more", points: 2 },
+          { label: "1–2 years", points: 1 },
+          { label: "Under a year, or expired", points: 0 } ] },
+        { text: "Have you read the contract's terms on end-of-service gratuity, leave, ticket, notice period and probation?", options: [
+          { label: "Read and understood all of it", points: 3 },
+          { label: "Read most of it", points: 2 },
+          { label: "Skimmed it", points: 1 },
+          { label: "Haven't read it", points: 0 } ] },
+        { text: "Do you know that you must never hand your original passport to an employer — and have you kept certified copies of every document?", options: [
+          { label: "Yes — copies kept, and I know my rights", points: 2 },
+          { label: "Partly", points: 1 },
+          { label: "No", points: 0 } ] },
+        { text: "What is the status of your medical and police clearance?", options: [
+          { label: "Complete", points: 2 },
+          { label: "In progress", points: 1 },
+          { label: "Not started", points: 0 } ] },
+        { text: "Do you know how you would leave the job or the country if things went wrong?", help: "Notice periods, the Ministry of Labour complaint route, and the Pakistani embassy's contact details.", options: [
+          { label: "Yes, clearly", points: 1 },
+          { label: "Not really", points: 0 } ] }
+      ],
+      gap: "Qatar's reforms only work for workers who know about them. Exit permits were abolished for most workers, the NOC is gone, wages run through a protection system and recruitment fees are the employer's cost. Learn each of those before you go — the workers who get exploited are usually the ones who never found out what had changed."
+    }
+  ],
+
+  bands: [
+    { min: 80, tone: "go", title: "Ready — go, with a plan",
+      body: "Your preparation is strong. Work through the actions below, keep your savings intact, and remember that a registered contract with a legitimate employer beats a bigger number from someone who avoids the system." },
+    { min: 65, tone: "close", title: "Nearly ready — close a few gaps first",
+      body: "You are close, and the gaps are specific. Fix the weakest areas below over the next three to six months rather than going with a known weakness." },
+    { min: 50, tone: "wait", title: "Not yet — give it 6–12 months",
+      body: "There is a foundation here, but not enough to let you walk away from a bad employer — which is the whole advantage Qatar's reforms give you. Spend six to twelve months on the areas below, then take this again." },
+    { min: 0, tone: "stop", title: "Do not go yet — high risk of losing money",
+      body: "On these answers, going now would most likely cost you your savings without producing a stable job. Work through the gaps below and take this again." }
+  ],
+
+  first90: [
+    { title: "Get your Qatar ID and check what it says",
+      body: "Confirm the employer, job title and salary recorded on your residence permit match your registered contract. Discrepancies are far easier to challenge in week one than in month six." },
+    { title: "Check your pay against the minimum and against your contract",
+      body: "The floor is QAR 1,000 basic, plus QAR 500 for accommodation and QAR 300 for food where the employer does not provide them. Check the first payslip line by line, not just the total." },
+    { title: "Confirm wages arrive through the Wage Protection System",
+      body: "Payment into your own bank account creates the record that proves you were or were not paid. Cash arrangements remove it." },
+    { title: "Keep your passport",
+      body: "Withholding a worker's passport is not permitted. Keep the original, and store certified copies somewhere separate from where you live." },
+    { title: "Learn your notice period — it is your exit",
+      body: "One month for up to two years of service, two months beyond that. Because the NOC requirement is abolished, serving notice is all that stands between you and a better employer. Know the number from day one." },
+    { title: "Find the Ministry of Labour complaint route before you need it",
+      body: "Knowing where wage and contract disputes go changes what you are willing to tolerate. Save it alongside the Pakistani embassy in Doha." },
+    { title: "Hold your cushion",
+      body: "Do not remit everything home in the first months. Your savings are what let you use your right to leave a bad employer." }
+  ],
+
+  boosters: [
+    { title: "English to professional level",
+      body: "It sets your salary ceiling and it is what lets you read your own contract and raise a complaint in your own words." },
+    { title: "A certification your target industry actually names",
+      body: "Look at real Qatari job adverts for your target title and get the specific credential they list." },
+    { title: "A Qatari driving licence",
+      body: "Opens roles in logistics, sales and field work, and cuts what you spend getting to work." },
+    { title: "Know your mobility rights cold",
+      body: "The abolished NOC is the single biggest change in your favour. Workers who understand notice periods and the transfer process negotiate from a completely different position." },
+    { title: "Build a documented record from day one",
+      body: "Keep payslips, contracts and signed experience letters. In a market where you can now move employers, a verifiable record is what you move with." }
+  ]
+};
+
+
+/* ================= tiny helpers ================= */
+var $ = function(s,r){ return (r||document).querySelector(s); };
+function el(tag, attrs, kids){
+  var n = document.createElement(tag);
+  if (attrs) for (var k in attrs){
+    if (k === "class") n.className = attrs[k];
+    else if (k === "html") n.innerHTML = attrs[k];
+    else if (k === "text") n.textContent = attrs[k];
+    else if (k.slice(0,2) === "on") n.addEventListener(k.slice(2), attrs[k]);
+    else if (attrs[k] !== null && attrs[k] !== undefined) n.setAttribute(k, attrs[k]);
+  }
+  (kids || []).forEach(function(c){ if (c) n.appendChild(c); });
+  return n;
+}
+function maxPts(q){ return q.options.reduce(function(m,o){ return Math.max(m, o.points||0); }, 0); }
+
+/* ================= state ================= */
+var S = {
+  packId: null,
+  step: "pick",      // pick | knockouts | sec:<i> | result
+  knock: {},         // knockoutId -> option index
+  ans: {},           // "<secId>.<qIdx>" -> option index
+  saved: null        // submission id, when recorded
+};
+var DB = null, IS_ADMIN = false, ADMIN_VIEW = false;
+
+function pack(){ return PACKS[S.packId]; }
+function packList(){ return Object.keys(PACKS).map(function(k){ return PACKS[k]; }); }
+
+/* ================= scoring ================= */
+function score(){
+  var p = pack(), total = 0, max = 0, sections = [];
+  p.sections.forEach(function(sec){
+    var got = 0, m = 0;
+    sec.questions.forEach(function(q, i){
+      m += maxPts(q);
+      var pick = S.ans[sec.id + "." + i];
+      if (pick !== undefined && q.options[pick]) got += (q.options[pick].points || 0);
+    });
+    sections.push({ id: sec.id, name: sec.name, got: got, max: m, pct: m ? got/m : 0, gap: sec.gap });
+    total += got; max += m;
+  });
+  var stops = [], warns = [];
+  p.knockouts.forEach(function(k){
+    var pick = S.knock[k.id];
+    if (pick === undefined) return;
+    var sev = (k.options[pick] || {}).severity;
+    if (sev === "stop") stops.push(k);
+    else if (sev === "warn") warns.push(k);
+  });
+  var band = p.bands.filter(function(b){ return total >= b.min; })[0] || p.bands[p.bands.length-1];
+  var focus = sections.slice()
+    .filter(function(s){ return s.pct < 0.7; })
+    .sort(function(a,b){ return a.pct - b.pct; })
+    .slice(0,3);
+  if (!focus.length){
+    focus = sections.slice().sort(function(a,b){ return a.pct - b.pct; })
+      .filter(function(s){ return s.pct < 1; }).slice(0,1);
+  }
+  return { total: total, max: max, sections: sections, stops: stops, warns: warns, band: band, focus: focus };
+}
+
+/* ================= progress ================= */
+function setProgress(){
+  var p = pack(), pctDone = 0;
+  if (!p) pctDone = 0;
+  else if (S.step === "result") pctDone = 100;
+  else {
+    var totalQ = p.knockouts.length + p.sections.reduce(function(a,s){ return a + s.questions.length; }, 0);
+    var done = Object.keys(S.knock).length + Object.keys(S.ans).length;
+    pctDone = totalQ ? Math.round(done/totalQ*100) : 0;
+  }
+  $("#progressBar").style.width = pctDone + "%";
+  var chip = $("#ctxChip");
+  if (p && S.step !== "pick"){ chip.hidden = false; chip.textContent = p.flag + " " + p.name; }
+  else chip.hidden = true;
+  $("#restartBtn").classList.toggle("hidden", S.step === "pick");
+}
+
+/* ================= views ================= */
+function render(){
+  var v = $("#view");
+  v.innerHTML = "";
+  v.className = (S.step === "result" || ADMIN_VIEW) ? "wrap wide" : "wrap";
+  if (ADMIN_VIEW) renderAdmin(v);
+  else if (S.step === "pick") renderPick(v);
+  else if (S.step === "knockouts") renderKnockouts(v);
+  else if (S.step.slice(0,4) === "sec:") renderSection(v, +S.step.slice(4));
+  else if (S.step === "result") renderResult(v);
+  setProgress();
+  window.scrollTo(0,0);
+}
+
+function renderPick(v){
+  var s = el("div", { class: "stack loose" });
+  var head = el("div", { class: "stack tight" }, [
+    el("span", { class: "eyebrow", text: "A straight answer, before you spend anything" }),
+    el("h1", { text: "Should you go abroad — and to this country?" }),
+    el("p", { class: "lede", text: "Forty questions about your qualifications, money, paperwork and plan. At the end you get a score out of 100, the gaps that matter most, and what to do about them — before you go and after you land." })
+  ]);
+  head.querySelector(".lede").style.cssText = "font-size:1.05rem;color:var(--ink-2);max-width:34rem";
+  s.appendChild(head);
+
+  s.appendChild(el("div", { class: "note", html:
+    "This is a preparation check, not an immigration service. It cannot approve a visa or find you a job — it tells you how ready you are and where you are exposed." }));
+
+  var list = el("div", { class: "stack tight" }, [ el("span", { class: "eyebrow", text: "Choose a destination" }) ]);
+  var grid = el("div", { class: "countries" });
+  packList().forEach(function(p){
+    grid.appendChild(el("button", { class: "country", type: "button", onclick: function(){ S.packId = p.id; S.step = "knockouts"; render(); } }, [
+      el("span", { class: "fl", text: p.flag }),
+      el("span", {}, [
+        el("b", { text: p.name }),
+        el("small", { text: p.authored === "owner" ? "Full assessment" : "Researched — review recommended" })
+      ])
+    ]));
+  });
+  list.appendChild(grid);
+  s.appendChild(list);
+  v.appendChild(s);
+}
+
+function renderKnockouts(v){
+  var p = pack();
+  var s = el("div", { class: "stack" });
+  s.appendChild(el("div", { class: "stack tight" }, [
+    el("span", { class: "eyebrow", text: "Stage 1 of 2 — before the score" }),
+    el("h1", { text: "The six things that sink people" }),
+    el("p", { text: p.intro, style: "color:var(--ink-2)" })
+  ]));
+  s.appendChild(el("div", { class: "note", text:
+    "These are not scored. A good score cannot cancel out a problem here — that is the point of asking them first." }));
+
+  p.knockouts.forEach(function(k, i){
+    var g = el("div", { class: "qgroup" });
+    g.appendChild(el("div", { class: "qhead" }, [
+      el("span", { class: "qnum", text: String(i+1).padStart(2,"0") }),
+      el("span", { class: "qtext", text: k.text })
+    ]));
+    if (k.help) g.appendChild(el("p", { class: "qhelp", text: k.help }));
+    var opts = el("div", { class: "opts" });
+    k.options.forEach(function(o, oi){
+      var input = el("input", { type: "radio", name: "k-" + k.id });
+      if (S.knock[k.id] === oi) input.checked = true;
+      input.addEventListener("change", function(){ S.knock[k.id] = oi; setProgress(); syncNav(); });
+      opts.appendChild(el("label", { class: "opt" }, [ input, el("span", { text: o.label }) ]));
+    });
+    g.appendChild(opts);
+    s.appendChild(g);
+  });
+
+  s.appendChild(el("div", { class: "nav noprint" }, [
+    el("button", { class: "btn ghost", type: "button", onclick: function(){ S.step = "pick"; render(); }, text: "Back" }),
+    el("span", { class: "spacer" }),
+    el("button", { class: "btn", id: "next", type: "button", onclick: function(){ S.step = "sec:0"; render(); }, text: "Continue to the score →" })
+  ]));
+  v.appendChild(s);
+  syncNav();
+}
+
+function renderSection(v, idx){
+  var p = pack(), sec = p.sections[idx];
+  var s = el("div", { class: "stack" });
+  s.appendChild(el("div", { class: "stack tight" }, [
+    el("span", { class: "eyebrow", text: "Stage 2 of 2 — section " + (idx+1) + " of " + p.sections.length }),
+    el("div", { class: "sechead" }, [
+      el("h1", { text: sec.name }),
+      el("span", { class: "chip mono max", text: sec.max + " pts" })
+    ])
+  ]));
+
+  sec.questions.forEach(function(q, i){
+    var g = el("div", { class: "qgroup" });
+    g.appendChild(el("div", { class: "qhead" }, [
+      el("span", { class: "qnum", text: sec.id + String(i+1) }),
+      el("span", { class: "qtext", text: q.text })
+    ]));
+    if (q.help) g.appendChild(el("p", { class: "qhelp", text: q.help }));
+    var opts = el("div", { class: "opts" });
+    q.options.forEach(function(o, oi){
+      var input = el("input", { type: "radio", name: sec.id + "-" + i });
+      if (S.ans[sec.id + "." + i] === oi) input.checked = true;
+      input.addEventListener("change", function(){ S.ans[sec.id + "." + i] = oi; setProgress(); syncNav(); });
+      opts.appendChild(el("label", { class: "opt" }, [
+        input, el("span", { text: o.label }), el("span", { class: "pts", text: (o.points||0) + "p" })
+      ]));
+    });
+    g.appendChild(opts);
+    s.appendChild(g);
+  });
+
+  var last = idx === p.sections.length - 1;
+  s.appendChild(el("div", { class: "nav noprint" }, [
+    el("button", { class: "btn ghost", type: "button", text: "Back", onclick: function(){
+      S.step = idx === 0 ? "knockouts" : "sec:" + (idx-1); render();
+    } }),
+    el("span", { class: "spacer" }),
+    el("button", { class: "btn", id: "next", type: "button",
+      text: last ? "See my result →" : "Next section →",
+      onclick: function(){ S.step = last ? "result" : "sec:" + (idx+1); render(); } })
+  ]));
+  v.appendChild(s);
+  syncNav();
+}
+
+/* disable Next until everything on screen is answered */
+function syncNav(){
+  var btn = $("#next");
+  if (!btn) return;
+  var p = pack(), missing = 0;
+  if (S.step === "knockouts") p.knockouts.forEach(function(k){ if (S.knock[k.id] === undefined) missing++; });
+  else if (S.step.slice(0,4) === "sec:"){
+    var sec = p.sections[+S.step.slice(4)];
+    sec.questions.forEach(function(q,i){ if (S.ans[sec.id + "." + i] === undefined) missing++; });
+  }
+  btn.disabled = missing > 0;
+  btn.title = missing ? missing + " question" + (missing>1?"s":"") + " left on this page" : "";
+}
+
+function renderResult(v){
+  var p = pack(), r = score();
+  var s = el("div", { class: "stack loose" });
+
+  /* --- verdict: a stop knockout overrides the band --- */
+  var stopped = r.stops.length > 0;
+  var tone = stopped ? "stop" : r.band.tone;
+  var vTitle = stopped ? "Stop — do not travel on this arrangement" : r.band.title;
+  var vBody = stopped
+    ? "You scored " + r.total + " out of " + r.max + ", but your score is not the problem. " +
+      (r.stops.length === 1 ? "One answer" : r.stops.length + " answers") +
+      " above describes something that can cost you your money, your legal status or your freedom — regardless of how well prepared you are otherwise. Resolve " +
+      (r.stops.length === 1 ? "it" : "them") + " before anything else."
+    : r.band.body;
+
+  var verdict = el("div", { class: "verdict", "data-tone": tone }, [
+    el("span", { class: "eyebrow", text: p.flag + " " + p.name + " · readiness assessment" }),
+    el("h2", { text: vTitle }),
+    el("p", { text: vBody })
+  ]);
+  if (!stopped){
+    verdict.appendChild(el("div", { class: "scoreline" }, [
+      el("div", { class: "bignum" }, [ document.createTextNode(String(r.total)), el("small", { text: " / " + r.max }) ]),
+      el("p", { class: "cap", text: "Your preparation score. The breakdown below shows where the points went and where they did not." })
+    ]));
+  }
+  s.appendChild(verdict);
+
+  /* --- hard warnings --- */
+  if (r.stops.length){
+    var stopWrap = el("div", { class: "stack tight" }, [ el("span", { class: "eyebrow", text: "Resolve before you go further" }) ]);
+    r.stops.forEach(function(k){
+      stopWrap.appendChild(el("div", { class: "alarm" }, [
+        el("h3", { text: k.stopTitle || k.text }),
+        el("p", { text: k.stopBody || "" })
+      ]));
+    });
+    s.appendChild(stopWrap);
+  }
+  if (r.warns.length){
+    var warnWrap = el("div", { class: "stack tight" }, [ el("span", { class: "eyebrow", text: "Worth fixing" }) ]);
+    r.warns.forEach(function(k){
+      if (!k.warnTitle) return;
+      warnWrap.appendChild(el("div", { class: "caution" }, [
+        el("h3", { text: k.warnTitle }), el("p", { text: k.warnBody || "" })
+      ]));
+    });
+    if (warnWrap.children.length > 1) s.appendChild(warnWrap);
+  }
+
+  /* --- breakdown --- */
+  if (stopped){
+    s.appendChild(el("div", { class: "panel" }, [
+      el("span", { class: "eyebrow", text: "For reference" }),
+      el("div", { class: "scoreline" }, [
+        el("div", { class: "bignum" }, [ document.createTextNode(String(r.total)), el("small", { text: " / " + r.max }) ]),
+        el("p", { class: "cap", text: "Your preparation score, set aside from the warnings above." })
+      ])
+    ]));
+  }
+  var focusIds = r.focus.map(function(f){ return f.id; });
+  var chart = el("div", { class: "chart" });
+  r.sections.forEach(function(sec){
+    var isFocus = focusIds.indexOf(sec.id) >= 0;
+    var name = el("span", { class: "name", text: sec.name });
+    if (isFocus) name.appendChild(el("span", { class: "flag", text: "focus" }));
+    chart.appendChild(el("div", { class: "row", "data-focus": isFocus ? "1" : "0" }, [
+      name,
+      el("span", { class: "val", text: sec.got + "/" + sec.max }),
+      el("span", { class: "track" }, [ el("i", { class: "fill", style: "width:" + Math.round(sec.pct*100) + "%" }) ])
+    ]));
+  });
+  s.appendChild(el("div", { class: "panel" }, [
+    el("span", { class: "eyebrow", text: "Where your points came from" }),
+    el("h2", { text: "Section breakdown", style: "margin:.3rem 0 1rem" }),
+    chart
+  ]));
+
+  /* --- before you go --- */
+  if (r.focus.length){
+    var before = el("div", { class: "items" });
+    r.focus.forEach(function(f){
+      before.appendChild(el("div", { class: "item" }, [
+        el("span", { class: "tag", text: f.name + " · " + f.got + " of " + f.max }),
+        el("h3", { text: "Close this gap first" }),
+        el("p", { text: f.gap })
+      ]));
+    });
+    s.appendChild(el("div", { class: "panel" }, [
+      el("span", { class: "eyebrow", text: "Your weakest areas, in order" }),
+      el("h2", { text: "Before you go", style: "margin:.3rem 0 .9rem" }),
+      before
+    ]));
+  }
+
+  /* --- first 90 days --- */
+  var f90 = el("div", { class: "items" });
+  p.first90.forEach(function(a){
+    f90.appendChild(el("div", { class: "item" }, [ el("h3", { text: a.title }), el("p", { text: a.body }) ]));
+  });
+  s.appendChild(el("div", { class: "panel" }, [
+    el("span", { class: "eyebrow", text: "After you land" }),
+    el("h2", { text: "Your first 90 days", style: "margin:.3rem 0 .9rem" }),
+    f90
+  ]));
+
+  /* --- boosters --- */
+  var bo = el("div", { class: "items" });
+  p.boosters.forEach(function(a){
+    bo.appendChild(el("div", { class: "item" }, [ el("h3", { text: a.title }), el("p", { text: a.body }) ]));
+  });
+  s.appendChild(el("div", { class: "panel" }, [
+    el("span", { class: "eyebrow", text: "Where the return is highest" }),
+    el("h2", { text: "What will actually benefit you there", style: "margin:.3rem 0 .9rem" }),
+    bo
+  ]));
+
+  var actions = el("div", { class: "nav noprint" }, [
+    el("button", { class: "btn ghost", type: "button", text: "Back", onclick: function(){ S.step = "sec:" + (p.sections.length-1); render(); } }),
+    el("span", { class: "spacer" }),
+    el("span", { class: "saveline", id: "saveline" }),
+    el("button", { class: "btn ghost", type: "button", text: "Print / save as PDF", onclick: function(){ window.print(); } })
+  ]);
+  s.appendChild(actions);
+  v.appendChild(s);
+
+  recordSubmission(r);
+}
+
+/* ================= db: submissions ================= */
+function recordSubmission(r){
+  if (!DB || S.saved) return;
+  var line = $("#saveline");
+  var body = {
+    country: S.packId,
+    countryName: pack().name,
+    score: r.total,
+    max: r.max,
+    band: r.stops.length ? "STOP (knockout)" : r.band.title,
+    stops: r.stops.map(function(k){ return k.id; }),
+    warns: r.warns.map(function(k){ return k.id; }),
+    sections: r.sections.map(function(s){ return { id: s.id, got: s.got, max: s.max }; }),
+    knockAnswers: S.knock,
+    answers: S.ans,
+    at: new Date().toISOString()
+  };
+  DB.collection("submissions").add(body).then(function(ref){
+    S.saved = ref.id;
+    if (line) line.textContent = "Recorded for review";
+  }).catch(function(e){
+    if (line) line.textContent = e && e.code === "quota_exceeded"
+      ? "Not recorded — the record store is full"
+      : "Not recorded";
+  });
+}
+
+/* ================= admin ================= */
+var adminTab = "packs", editingPack = null, subsCache = [];
+
+async function probeAdmin(){
+  if (!DB) return false;
+  try { await DB.doc("meta/probe").set({ at: new Date().toISOString() }); return true; }
+  catch (e) { return false; }
+}
+
+function renderAdmin(v){
+  var s = el("div", { class: "stack" });
+  s.appendChild(el("div", { class: "stack tight" }, [
+    el("span", { class: "eyebrow", text: "Editor · changes go live for everyone" }),
+    el("h1", { text: "Assessment console" })
+  ]));
+
+  var tabs = el("div", { class: "tabs" });
+  [["packs","Questions & scoring"],["subs","Submissions"]].forEach(function(t){
+    tabs.appendChild(el("button", { class: "tab", type: "button", role: "tab",
+      "aria-selected": adminTab === t[0] ? "true" : "false",
+      text: t[1], onclick: function(){ adminTab = t[0]; render(); } }));
+  });
+  s.appendChild(tabs);
+  s.appendChild(adminTab === "packs" ? adminPacks() : adminSubs());
+
+  s.appendChild(el("div", { class: "nav" }, [
+    el("button", { class: "btn ghost", type: "button", text: "← Back to the assessment",
+      onclick: function(){ ADMIN_VIEW = false; render(); } })
+  ]));
+  v.appendChild(s);
+}
+
+function adminPacks(){
+  var wrap = el("div", { class: "stack" });
+  if (!editingPack){
+    wrap.appendChild(el("p", { text: "Pick a country to edit its questions, answer options, points and verdict bands.", style: "color:var(--ink-2);font-size:.93rem" }));
+    var grid = el("div", { class: "countries" });
+    packList().forEach(function(p){
+      grid.appendChild(el("button", { class: "country", type: "button", onclick: function(){ editingPack = p.id; render(); } }, [
+        el("span", { class: "fl", text: p.flag }),
+        el("span", {}, [ el("b", { text: p.name }),
+          el("small", { text: p.authored === "owner" ? "Your content" : "Researched — needs your review" }) ])
+      ]));
+    });
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  var p = PACKS[editingPack];
+  wrap.appendChild(el("div", { class: "admin-bar" }, [
+    el("button", { class: "btn ghost small", type: "button", text: "← All countries", onclick: function(){ editingPack = null; render(); } }),
+    el("span", { class: "chip", text: p.flag + " " + p.name }),
+    el("span", { class: "spacer", style: "flex:1" }),
+    el("span", { class: "tally", id: "totalTally" }),
+    el("button", { class: "btn small", type: "button", text: "Save changes", onclick: savePack })
+  ]));
+  if (p.authored !== "owner"){
+    wrap.appendChild(el("div", { class: "caution" }, [
+      el("h3", { text: "This pack was written from public research, not by you" }),
+      el("p", { text: "The questions and advice here are a first draft assembled from published sources. Review the wording, the points and the verdict bands against what you know before relying on it." })
+    ]));
+  }
+
+  /* bands */
+  var bandsEd = el("div", { class: "ed" });
+  p.bands.forEach(function(b){
+    bandsEd.appendChild(el("div", { class: "edq" }, [
+      el("div", { class: "edrow" }, [
+        el("label", { text: "From", style: "flex:none" }),
+        el("input", { class: "num", type: "number", value: b.min, min: 0, max: 100,
+          oninput: function(e){ b.min = +e.target.value; } }),
+        el("input", { type: "text", value: b.title, oninput: function(e){ b.title = e.target.value; } })
+      ]),
+      el("textarea", { oninput: function(e){ b.body = e.target.value; } , value: b.body})
+    ]));
+  });
+  bandsEd.querySelectorAll("textarea").forEach(function(t, i){ t.value = p.bands[i].body; });
+  wrap.appendChild(el("div", { class: "panel" }, [
+    el("span", { class: "eyebrow", text: "What each score means" }),
+    el("h2", { text: "Verdict bands", style: "margin:.3rem 0 .8rem" }),
+    bandsEd
+  ]));
+
+  /* sections */
+  p.sections.forEach(function(sec){
+    var body = el("div", {});
+    sec.questions.forEach(function(q, qi){
+      var qBox = el("div", { class: "edq" });
+      var ta = el("textarea", { rows: 2, oninput: function(e){ q.text = e.target.value; } });
+      ta.value = q.text;
+      qBox.appendChild(el("label", { text: "Question " + sec.id + (qi+1) }));
+      qBox.appendChild(ta);
+      q.options.forEach(function(o){
+        var row = el("div", { class: "edrow", style: "margin-top:.4rem" }, [
+          el("input", { type: "text", value: o.label, oninput: function(e){ o.label = e.target.value; } }),
+          el("input", { class: "num", type: "number", value: o.points, min: 0,
+            oninput: function(e){ o.points = +e.target.value; retally(p); } })
+        ]);
+        qBox.appendChild(row);
+      });
+      body.appendChild(qBox);
+    });
+    var tally = el("span", { class: "tally", "data-sec": sec.id });
+    wrap.appendChild(el("div", { class: "panel" }, [
+      el("div", { class: "sechead" }, [
+        el("span", { class: "eyebrow", text: "Section " + sec.id }),
+        el("h2", { text: sec.name, style: "margin:.2rem 0 .8rem;width:100%" })
+      ]),
+      el("div", { class: "edrow", style: "margin-bottom:.7rem" }, [
+        el("label", { text: "Section total", style: "flex:none" }),
+        el("input", { class: "num", type: "number", value: sec.max, min: 0,
+          oninput: function(e){ sec.max = +e.target.value; retally(p); } }),
+        tally
+      ]),
+      body
+    ]));
+  });
+  setTimeout(function(){ retally(p); }, 0);
+  return wrap;
+}
+
+function retally(p){
+  var total = 0, bad = false;
+  p.sections.forEach(function(sec){
+    var m = sec.questions.reduce(function(a,q){ return a + maxPts(q); }, 0);
+    total += m;
+    var node = document.querySelector('.tally[data-sec="' + sec.id + '"]');
+    if (node){
+      var ok = m === sec.max;
+      node.className = "tally " + (ok ? "good" : "bad");
+      node.textContent = ok ? "✓ options add up to " + m : "options add up to " + m + " — does not match";
+      if (!ok) bad = true;
+    }
+  });
+  var t = document.querySelector("#totalTally");
+  if (t){
+    var ok = total === 100 && !bad;
+    t.className = "tally " + (ok ? "good" : "bad");
+    t.textContent = ok ? "✓ 100 points" : total + " points total";
+  }
+}
+
+function savePack(){
+  var p = PACKS[editingPack];
+  if (!DB) return alert("No database on this version of the page.");
+  DB.doc("packs/" + p.id).set(JSON.parse(JSON.stringify(p))).then(function(){
+    var t = document.querySelector("#totalTally");
+    if (t){ t.className = "tally good"; t.textContent = "✓ Saved"; setTimeout(function(){ retally(p); }, 1600); }
+  }).catch(function(e){
+    alert(e && e.code === "invalid_argument"
+      ? "Saving needs edit access to this artifact."
+      : "Could not save. Try again.");
+  });
+}
+
+function adminSubs(){
+  var wrap = el("div", { class: "stack" });
+  wrap.appendChild(el("div", { class: "admin-bar" }, [
+    el("span", { class: "chip", id: "subCount", text: "loading…" }),
+    el("span", { style: "flex:1" }),
+    el("button", { class: "btn ghost small", type: "button", text: "Export CSV", onclick: exportCsv })
+  ]));
+  var host = el("div", { class: "panel scroller", id: "subsHost" }, [ el("p", { text: "Loading submissions…", style: "color:var(--ink-3)" }) ]);
+  wrap.appendChild(host);
+
+  DB.collection("submissions").orderBy("at", "desc").limit(500).get().then(function(snap){
+    subsCache = snap.docs.map(function(d){ var o = d.data(); o._id = d.id; return o; });
+    document.querySelector("#subCount").textContent = subsCache.length + " recorded";
+    host.innerHTML = "";
+    if (!subsCache.length){ host.appendChild(el("p", { text: "Nothing recorded yet.", style: "color:var(--ink-3)" })); return; }
+    var t = el("table", { class: "subs" });
+    t.appendChild(el("tr", {}, ["When","Country","Score","Verdict","Red flags"].map(function(h){ return el("th", { text: h }); })));
+    subsCache.forEach(function(s){
+      t.appendChild(el("tr", {}, [
+        el("td", { class: "n", text: (s.at||"").slice(0,16).replace("T"," ") }),
+        el("td", { text: s.countryName || s.country || "" }),
+        el("td", { class: "n", text: s.score + "/" + s.max }),
+        el("td", { text: s.band || "" }),
+        el("td", { class: "n", text: (s.stops||[]).length ? (s.stops||[]).length + " stop" : "—" })
+      ]));
+    });
+    host.appendChild(t);
+  }).catch(function(){
+    host.innerHTML = "";
+    host.appendChild(el("p", { text: "Could not load submissions.", style: "color:var(--ink-3)" }));
+  });
+  return wrap;
+}
+
+function exportCsv(){
+  if (!subsCache.length) return;
+  var cols = ["at","countryName","score","max","band","stops","warns"];
+  var rows = [cols.join(",")].concat(subsCache.map(function(s){
+    return cols.map(function(c){
+      var val = Array.isArray(s[c]) ? s[c].join(" ") : (s[c] === undefined ? "" : s[c]);
+      return '"' + String(val).replace(/"/g, '""') + '"';
+    }).join(",");
+  })).join("\n");
+  claude.use("downloads").then(function(d){
+    if (d) return d.save({ filename: "submissions.csv", data: rows });
+    fallbackCsv(rows);
+  }).catch(function(){ fallbackCsv(rows); });
+}
+function fallbackCsv(rows){
+  var w = window.open("", "_blank");
+  if (w){ w.document.write("<pre>" + rows.replace(/[<&]/g, function(c){ return c === "<" ? "&lt;" : "&amp;"; }) + "</pre>"); }
+}
+
+/* ================= boot ================= */
+$("#restartBtn").addEventListener("click", function(){
+  S.knock = {}; S.ans = {}; S.saved = null; S.packId = null; S.step = "pick"; ADMIN_VIEW = false; render();
+});
+$("#adminBtn").addEventListener("click", function(){ ADMIN_VIEW = !ADMIN_VIEW; editingPack = null; render(); });
+
+render();
+
+/* db lights up later, if this deployment has it */
+(async function(){
+  if (typeof claude === "undefined" || !claude.use) return;
+  DB = await claude.use("db");
+  if (!DB) return;
+  try {
+    var snap = await DB.collection("packs").get();
+    snap.docs.forEach(function(d){
+      var p = d.data();
+      if (p && p.id && p.sections) PACKS[p.id] = p;
+    });
+    if (S.step === "pick") render();
+  } catch (e) { /* falls back to the built-in packs */ }
+  IS_ADMIN = await probeAdmin();
+  if (IS_ADMIN) $("#adminBtn").classList.remove("hidden");
+})();
+</script>
+</body>
+</html>

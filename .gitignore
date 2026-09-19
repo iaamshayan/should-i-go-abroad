@@ -1,0 +1,9 @@
+# Build output for the claude.ai artifacts; regenerate with: python build.py
+dist/
+
+# Original scorecard: kept out of the public repo. Remove this line to publish it.
+*.xlsx
+
+.check.js
+.engine.js
+__pycache__/
