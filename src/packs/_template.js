@@ -20,10 +20,11 @@ PACKS["country-id"] = {
   authored: "research",          // "owner" = your expertise | "research" = drafted, needs review
   updated: "2026-09-08",
 
+  tagline: "One line for the country card on the landing page.",
   intro: "One sentence framing the assessment for this destination.",
 
   /* ---------------------------------------------------------------
-   * KNOCKOUTS — not scored. These are the things that ruin people
+   * KNOCKOUTS: not scored. These are the things that ruin people
    * regardless of how well they score. A "stop" answer overrides the
    * band entirely and the result page leads with the warning.
    *
@@ -33,7 +34,7 @@ PACKS["country-id"] = {
    *
    * Every knockout needs at least one "ok" option, or the assessment
    * is unpassable. Write these from what actually goes wrong in THIS
-   * country — they are the part that should differ most between packs.
+   * country. They are the part that should differ most between packs.
    * --------------------------------------------------------------- */
   knockouts: [
     {
@@ -50,12 +51,12 @@ PACKS["country-id"] = {
       warnTitle: "Only needed if any option is severity:\"warn\"",
       warnBody: "Shown under \"Worth fixing\" on the result page."
     }
-    /* Six knockouts is the working number — enough to cover visa, contract,
+    /* Six knockouts is the working number: enough to cover visa, contract,
        recruiter legitimacy, money, licensing and local labour-market risk. */
   ],
 
   /* ---------------------------------------------------------------
-   * SECTIONS — scored, and must total 100 across all sections.
+   * SECTIONS: scored, and must total 100 across all sections.
    * Weight them for THIS country: Arabic matters in Saudi Arabia and
    * barely registers in the UAE; network matters more in a closed
    * market than an open one. Do not just copy another pack's weights.
@@ -83,14 +84,14 @@ PACKS["country-id"] = {
   ],
 
   /* ---------------------------------------------------------------
-   * BANDS — what a score means. Listed high to low; the app picks the
+   * BANDS: what a score means. Listed high to low; the app picks the
    * first band whose `min` the score reaches, so keep them descending.
    * tone drives the colour: "go" | "close" | "wait" | "stop"
    * --------------------------------------------------------------- */
   bands: [
-    { min: 80, tone: "go",    title: "Ready — go, with a plan", body: "..." },
-    { min: 65, tone: "close", title: "Nearly ready — close a few gaps first", body: "..." },
-    { min: 50, tone: "wait",  title: "Not yet — give it 6–12 months", body: "..." },
+    { min: 80, tone: "go",    title: "Ready: go, with a plan", body: "..." },
+    { min: 65, tone: "close", title: "Nearly ready: close a few gaps first", body: "..." },
+    { min: 50, tone: "wait",  title: "Not yet: give it 6–12 months", body: "..." },
     { min: 0,  tone: "stop",  title: "Do not go yet", body: "..." }
   ],
 

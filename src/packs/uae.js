@@ -1,5 +1,5 @@
 /* Country pack: United Arab Emirates
- * DRAFT — assembled from public research, not from the owner's own expertise.
+ * DRAFT: assembled from public research, not from the owner's own expertise.
  * Review the wording, points and bands before relying on it. See AUTHORING.md.
  */
 PACKS["uae"] = {
@@ -10,30 +10,31 @@ PACKS["uae"] = {
   authored: "research",
   updated: "2026-09-08",
 
-  intro: "For a Pakistan-based worker weighing a move to the Emirates. The rules here differ from Saudi Arabia in ways that matter — read the questions carefully rather than assuming.",
+  tagline: "An open, English-speaking market with a high cost of living. Visit visas can convert, with care.",
+  intro: "For a Pakistan-based worker weighing a move to the Emirates. The rules here differ from Saudi Arabia in ways that matter, so read the questions carefully rather than assuming.",
 
   knockouts: [
     {
       id: "k-visa",
       text: "What visa will you actually travel on?",
-      help: "Unlike Saudi Arabia, a visit visa can legally become an employment visa here — but only through an employer, and never by yourself.",
+      help: "Unlike Saudi Arabia, a visit visa can legally become an employment visa here, but only through an employer, and never by yourself.",
       options: [
         { label: "An employment visa arranged by an employer before I travel", severity: "ok" },
         { label: "A visit visa, with a signed offer, and the employer will convert it", severity: "warn" },
         { label: "A visit visa, and I'll look for work after I arrive", severity: "warn" },
-        { label: "I don't know yet — the agent hasn't told me", severity: "stop" }
+        { label: "I don't know yet. The agent hasn't told me", severity: "stop" }
       ],
       stopTitle: "You cannot plan around a visa nobody will name",
       stopBody: "An agent who will not tell you which visa you are travelling on is hiding something. The visa type determines whether you can legally work, how long you can stay and what it costs you if the job falls through. Get it in writing before you pay anyone.",
       warnTitle: "Job-hunting on a visit visa is legal here, but the clock is expensive",
-      warnBody: "You may enter on a visit visa and convert to employment without leaving the country — but only an employer can file that conversion, and you cannot legally work a single day before it completes. Conversion typically takes two to three weeks after labour approval. If your visa expires first, overstay is charged at AED 50 per day with no grace period since February 2026. Budget for the full search plus the conversion, not just the flight."
+      warnBody: "You may enter on a visit visa and convert to employment without leaving the country, but only an employer can file that conversion, and you cannot legally work a single day before it completes. Conversion typically takes two to three weeks after labour approval. If your visa expires first, overstay is charged at AED 50 per day with no grace period since February 2026. Budget for the full search plus the conversion, not just the flight."
     },
     {
       id: "k-contract",
       text: "Has your offer been registered with MOHRE, and does it match what you were promised?",
       help: "The Ministry of Human Resources and Emiratisation registers the official offer letter and contract.",
       options: [
-        { label: "Yes — I've seen the MOHRE offer letter and it matches", severity: "ok" },
+        { label: "Yes, I've seen the MOHRE offer letter and it matches", severity: "ok" },
         { label: "A company offer, but nothing registered with MOHRE yet", severity: "warn" },
         { label: "Only a verbal or WhatsApp promise", severity: "stop" },
         { label: "No offer at all", severity: "stop" }
@@ -48,26 +49,26 @@ PACKS["uae"] = {
       text: "Is your recruiter a BEOE-licensed Overseas Employment Promoter, and will your contract be stamped by the Protectorate of Emigrants?",
       help: "This is Pakistan-side protection and applies wherever you are going.",
       options: [
-        { label: "Yes — I verified the licence myself and protection is arranged", severity: "ok" },
+        { label: "Yes, I verified the licence myself and protection is arranged", severity: "ok" },
         { label: "The agent says yes, but I haven't verified it", severity: "warn" },
-        { label: "No — going through a personal contact, without protection", severity: "stop" },
+        { label: "No, I'm going through a personal contact without protection", severity: "stop" },
         { label: "I don't know what this is", severity: "stop" }
       ],
       stopTitle: "You would be travelling outside Pakistan's legal protection",
       stopBody: "Every Pakistani going abroad on a work visa is legally required to have their Foreign Service Agreement protected by the Protectorate of Emigrants. Protection is what entitles you to assistance from the Pakistani mission in the UAE if the employer breaks the contract. Verify your agent's licence on beoe.gov.pk before paying anyone anything.",
       warnTitle: "Verify the licence yourself",
-      warnBody: "An agent's word about their own licence is worth nothing. The BEOE publishes the list of active OEP licences — check it yourself, and confirm the specific office you are dealing with."
+      warnBody: "An agent's word about their own licence is worth nothing. The BEOE publishes the list of active OEP licences, so check it yourself, and confirm the specific office you are dealing with."
     },
     {
       id: "k-money",
       text: "Has anyone asked you for money beyond documented, receipted government fees?",
       options: [
-        { label: "No — only official fees, with receipts", severity: "ok" },
+        { label: "No, only official fees with receipts", severity: "ok" },
         { label: "A modest amount, and I got a receipt", severity: "warn" },
         { label: "A large amount in cash, with no receipt", severity: "stop" }
       ],
       stopTitle: "This is the standard shape of a recruitment scam",
-      stopBody: "Large unreceipted cash demands are the defining feature of overseas job fraud in Pakistan. A legitimate employer does not charge you to be hired — in the UAE, recruitment costs are the employer's to carry. Stop paying, keep every message and receipt, and verify the employer using contact details you found yourself.",
+      stopBody: "Large unreceipted cash demands are the defining feature of overseas job fraud in Pakistan. A legitimate employer does not charge you to be hired. In the UAE, recruitment costs are the employer's to carry. Stop paying, keep every message and receipt, and verify the employer using contact details you found yourself.",
       warnTitle: "Keep every receipt",
       warnBody: "Even documented fees are worth checking against the official schedule, and the paperwork is your evidence if the placement goes wrong."
     },
@@ -88,13 +89,13 @@ PACKS["uae"] = {
     },
     {
       id: "k-licence",
-      text: "Does your profession require UAE licensing or credential verification — and have you started it?",
+      text: "Does your profession require UAE licensing or credential verification, and have you started it?",
       help: "DHA, DoH or MOHAP for health workers; engineering and several other fields have their own registration.",
       options: [
-        { label: "Not required for my profession — I checked", severity: "ok" },
+        { label: "Not required for my profession (I checked)", severity: "ok" },
         { label: "Required, and my licence or verification is complete", severity: "ok" },
-        { label: "Required — started but not finished", severity: "warn" },
-        { label: "Required — I haven't started", severity: "stop" },
+        { label: "Required, started but not finished", severity: "warn" },
+        { label: "Required, and I haven't started", severity: "stop" },
         { label: "I don't know whether it's required", severity: "stop" }
       ],
       stopTitle: "You may not be allowed to practise your profession",
@@ -108,7 +109,7 @@ PACKS["uae"] = {
     {
       id: "A", name: "Education & qualification", max: 12,
       questions: [
-        { text: "What is your highest level of education?", help: "MOHRE classes you as skilled with a degree or equivalent diploma plus a salary at or above AED 4,000 — which affects which employers can hire you.", options: [
+        { text: "What is your highest level of education?", help: "MOHRE classes you as skilled with a degree or equivalent diploma plus a salary at or above AED 4,000, which affects which employers can hire you.", options: [
           { label: "Master's or PhD", points: 4 },
           { label: "Bachelor's", points: 3 },
           { label: "Diploma", points: 2 },
@@ -148,7 +149,7 @@ PACKS["uae"] = {
           { label: "1–2 years", points: 2 },
           { label: "Some informal-sector work only", points: 1 },
           { label: "No formal employment", points: 0 } ] },
-        { text: "Can you produce verifiable evidence of your experience — letters, payslips and contracts an outside verifier could confirm?", options: [
+        { text: "Can you produce verifiable evidence of your experience, such as letters, payslips and contracts an outside verifier could confirm?", options: [
           { label: "Strong documentation for every role", points: 3 },
           { label: "Some documentation", points: 2 },
           { label: "Limited documentation", points: 1 },
@@ -162,7 +163,7 @@ PACKS["uae"] = {
           { label: "Once or twice", points: 1 },
           { label: "Never", points: 0 } ] }
       ],
-      gap: "The UAE market is more open to direct application than Saudi Arabia — which cuts both ways, because you are competing with the whole world rather than only with other Pakistanis. Apply directly to named companies rather than through agents, and make your documentation airtight: signed experience letters on letterhead, with dates, title and duties."
+      gap: "The UAE market is more open to direct application than Saudi Arabia, which cuts both ways, because you are competing with the whole world rather than only with other Pakistanis. Apply directly to named companies rather than through agents, and make your documentation airtight: signed experience letters on letterhead, with dates, title and duties."
     },
     {
       id: "C", name: "Language & communication", max: 10,
@@ -182,7 +183,7 @@ PACKS["uae"] = {
           { label: "Average", points: 1 },
           { label: "Weak", points: 0 } ] }
       ],
-      gap: "English carries almost all the weight here — most UAE workplaces run in it, and weak English caps your salary far more than weak Arabic does. If your English is basic, that is the single highest-return thing you can fix before applying, and it is fixable in months rather than years."
+      gap: "English carries almost all the weight here. Most UAE workplaces run in it, and weak English caps your salary far more than weak Arabic does. If your English is basic, that is the single highest-return thing you can fix before applying, and it is fixable in months rather than years."
     },
     {
       id: "D", name: "Practical & marketable skills", max: 10,
@@ -199,8 +200,8 @@ PACKS["uae"] = {
           { label: "Basic", points: 1 },
           { label: "None", points: 0 } ] },
         { text: "Do you have a valid driving licence and real driving experience?", options: [
-          { label: "Yes — car licence and strong experience", points: 2 },
-          { label: "Yes — basic experience", points: 1 },
+          { label: "Yes, car licence and strong experience", points: 2 },
+          { label: "Yes, basic experience", points: 1 },
           { label: "No", points: 0 } ] }
       ],
       gap: "A second skill is what keeps you employed when the first job falls through. Pick one trade or digital skill with visible demand, get certified in it, and be able to demonstrate it rather than just claim it."
@@ -213,7 +214,7 @@ PACKS["uae"] = {
           { label: "Close relatives", points: 2 },
           { label: "Extended relatives", points: 1 },
           { label: "None", points: 0 } ] },
-        { text: "Do you have people there who can genuinely help you find work — not just host you?", options: [
+        { text: "Do you have people there who can genuinely help you find work, not just host you?", options: [
           { label: "A strong professional network", points: 3 },
           { label: "Some useful contacts", points: 2 },
           { label: "One weak contact", points: 1 },
@@ -223,12 +224,12 @@ PACKS["uae"] = {
           { label: "A possible referral", points: 1 },
           { label: "None", points: 0 } ] }
       ],
-      gap: "Connections matter less here than in Saudi Arabia, but somewhere to stay during a job search is worth real money — Dubai accommodation is the fastest way to burn through a budget. Separate the two questions in your planning: who can host you, and who can actually get your CV read."
+      gap: "Connections matter less here than in Saudi Arabia, but somewhere to stay during a job search is worth real money. Dubai accommodation is the fastest way to burn through a budget. Separate the two questions in your planning: who can host you, and who can actually get your CV read."
     },
     {
       id: "F", name: "Financial preparation", max: 18,
       questions: [
-        { text: "How will you financially support yourself after arriving?", help: "Cost of living in Dubai and Abu Dhabi is high — budget against real rents, not optimistic ones.", options: [
+        { text: "How will you financially support yourself after arriving?", help: "Cost of living in Dubai and Abu Dhabi is high. Budget against real rents, not optimistic ones.", options: [
           { label: "Personal savings covering 6+ months", points: 6 },
           { label: "Family support available for 6+ months", points: 5 },
           { label: "3–6 months of backup", points: 3 },
@@ -249,7 +250,7 @@ PACKS["uae"] = {
           { label: "Yes, with difficulty", points: 2 },
           { label: "Maybe", points: 1 },
           { label: "No", points: 0 } ] },
-        { text: "Have you budgeted the full cost — fees, attestation, medical, ticket, visa conversion and first months — and can you cover it without debt?", options: [
+        { text: "Have you budgeted the full cost (fees, attestation, medical, ticket, visa conversion and first months), and can you cover it without debt?", options: [
           { label: "Fully, without borrowing", points: 3 },
           { label: "Mostly", points: 1 },
           { label: "Only by borrowing or selling assets", points: 0 } ] }
@@ -264,11 +265,11 @@ PACKS["uae"] = {
           { label: "A general field", points: 2 },
           { label: "“Any job”", points: 0 } ] },
         { text: "Have you researched what your role actually pays in the UAE, against what it costs to live there?", options: [
-          { label: "Extensively — I know the salary band and my monthly costs", points: 3 },
+          { label: "Extensively. I know the salary band and my monthly costs", points: 3 },
           { label: "Some research", points: 1 },
           { label: "None", points: 0 } ] },
         { text: "Do you understand how Emiratisation affects your target role?", help: "Skilled-role quotas rise each year for larger private companies.", options: [
-          { label: "Yes — I know where my role sits", points: 2 },
+          { label: "Yes, I know where my role sits", points: 2 },
           { label: "Roughly", points: 1 },
           { label: "No", points: 0 } ] },
         { text: "Are you willing to start in a lower position or salary than your ideal target?", options: [
@@ -279,7 +280,7 @@ PACKS["uae"] = {
           { label: "Career development, a specific profession or a business opportunity", points: 2 },
           { label: "“I'll go first and figure everything out later”", points: 0 } ] }
       ],
-      gap: "A high UAE salary is not a high UAE income — rent, schooling and transport take most of it, and people routinely move for a number that turns out to be worse than what they left. Do the arithmetic on take-home minus real living costs for the specific emirate you are targeting, before you accept anything."
+      gap: "A high UAE salary is not a high UAE income. Rent, schooling and transport take most of it, and people routinely move for a number that turns out to be worse than what they left. Do the arithmetic on take-home minus real living costs for the specific emirate you are targeting, before you accept anything."
     },
     {
       id: "H", name: "Legal & documentation readiness", max: 10,
@@ -293,8 +294,8 @@ PACKS["uae"] = {
           { label: "Read most of it", points: 2 },
           { label: "Skimmed it", points: 1 },
           { label: "Haven't read it", points: 0 } ] },
-        { text: "Do you know that you must never hand your original passport to an employer — and have you kept certified copies of every document?", help: "Withholding a worker's passport is illegal in the UAE.", options: [
-          { label: "Yes — copies kept, and I know my rights", points: 2 },
+        { text: "Do you know that you must never hand your original passport to an employer, and have you kept certified copies of every document?", help: "Withholding a worker's passport is illegal in the UAE.", options: [
+          { label: "Yes, copies kept and I know my rights", points: 2 },
           { label: "Partly", points: 1 },
           { label: "No", points: 0 } ] },
         { text: "What is the status of your medical and police clearance?", options: [
@@ -305,24 +306,24 @@ PACKS["uae"] = {
           { label: "Yes, clearly", points: 1 },
           { label: "Not really", points: 0 } ] }
       ],
-      gap: "The UAE gives workers more formal protection than many neighbours — MOHRE takes complaints, passport withholding is illegal, and WPS creates a payment record — but none of it helps if you do not know the rules or cannot show your own paperwork. Read the contract fully, keep certified copies somewhere separate, and save the complaint channels before you need them."
+      gap: "The UAE gives workers more formal protection than many neighbours. MOHRE takes complaints, passport withholding is illegal, and WPS creates a payment record. None of it helps if you do not know the rules or cannot show your own paperwork. Read the contract fully, keep certified copies somewhere separate, and save the complaint channels before you need them."
     }
   ],
 
   bands: [
-    { min: 80, tone: "go", title: "Ready — go, with a plan",
+    { min: 80, tone: "go", title: "Ready: go, with a plan",
       body: "Your preparation is strong. Work through the actions below, protect your financial cushion, and go in targeting named companies rather than running an open search." },
-    { min: 65, tone: "close", title: "Nearly ready — close a few gaps first",
+    { min: 65, tone: "close", title: "Nearly ready: close a few gaps first",
       body: "You are close, and the gaps are specific. Fix the weakest areas below over the next three to six months. Going now means going with a known, avoidable weakness in an expensive market." },
-    { min: 50, tone: "wait", title: "Not yet — give it 6–12 months",
+    { min: 50, tone: "wait", title: "Not yet: give it 6–12 months",
       body: "There is a foundation here, but not enough to absorb a slow job search in a high-cost country. Spend six to twelve months on the areas below, then take this again." },
-    { min: 0, tone: "stop", title: "Do not go yet — high risk of losing money",
-      body: "On these answers, going now would most likely cost you your savings without producing a stable job — and UAE living costs would drain them faster than you expect. Work through the gaps below and take this again." }
+    { min: 0, tone: "stop", title: "Do not go yet: high risk of losing money",
+      body: "On these answers, going now would most likely cost you your savings without producing a stable job, and UAE living costs would drain them faster than you expect. Work through the gaps below and take this again." }
   ],
 
   first90: [
     { title: "Do not work a single day before your status is converted",
-      body: "If you entered on a visit visa, you cannot legally work until the employment residence visa is issued — no matter what the employer says about starting immediately. Working before conversion is a violation that falls on you, not on them." },
+      body: "If you entered on a visit visa, you cannot legally work until the employment residence visa is issued, no matter what the employer says about starting immediately. Working before conversion is a violation that falls on you, not on them." },
     { title: "Watch the visa expiry date, not the job",
       body: "Overstay runs at AED 50 per day and the grace period was removed in February 2026. Know your exact expiry date and what the conversion timeline is, and keep enough money to leave if it slips." },
     { title: "Get your Emirates ID and labour card, and check the details",
@@ -345,7 +346,7 @@ PACKS["uae"] = {
     { title: "A certification your target industry actually names",
       body: "Look at real job adverts for your target title and get the specific credential they list, rather than a general course." },
     { title: "Aim at roles below the Emiratisation quota pressure",
-      body: "Skilled-role quotas rise annually for larger private companies. Smaller firms, free-zone companies and specialised technical roles face different pressure — where you aim changes your odds." },
+      body: "Skilled-role quotas rise annually for larger private companies. Smaller firms, free-zone companies and specialised technical roles face different pressure. Where you aim changes your odds." },
     { title: "Understand take-home versus cost of living",
       body: "The workers who do well here are the ones who negotiated on net position rather than headline salary. Learn the real numbers for your emirate before you accept." }
   ]
